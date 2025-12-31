@@ -1,2 +1,1 @@
-# Repository-NestifyDashboard
-Nestify - Smart BirdBox Surveillance Dashboard
+# NestifyDashboard - Smart BirdBox Overview Dashboard
