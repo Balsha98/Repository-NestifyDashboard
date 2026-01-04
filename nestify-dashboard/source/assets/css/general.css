@@ -18,3 +18,9 @@ body::-webkit-scrollbar {
 ul {
     list-style: none;
 }
+
+input,
+textarea {
+    outline: unset;
+    caret-color: var(--text-black);
+}
