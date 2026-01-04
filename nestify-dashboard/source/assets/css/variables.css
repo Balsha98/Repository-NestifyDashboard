@@ -1,0 +1,58 @@
+:root {
+    /* BRAND COLORS */
+    --brand-green-core: #4E801F;
+    --brand-green-accent: #78AA00;
+    --brand-blue-core: #004C97;
+    --brand-blue-accent: #147BD1;
+
+    /* ACCENT COLORS */
+    --accent-red-orange: #C05131;
+    --accent-red-orange-faded: #FBECE7;
+    --accent-yellow: #EAAA00;
+    --accent-yellow-faded: #FFF5E7;
+    --accent-purple: #8246AF;
+    --accent-purple-faded: #F3EEF6;
+    --accent-lilac: #AD96DC;
+    --accent-lilac-faded: #F6F3FA;
+    --accent-red: #9E2A2B;
+    --accent-red-faded: #F7E8E6;
+    --accent-sky: #419EDF;
+    --accent-sky-faded: #EDF4FB;
+    --accent-teal: #008AA2;
+    --accent-teal-faded: #E5F2F4;
+    --accent-forest-green: #006938;
+    --accent-forest-green-faded: #E6EEE8;
+
+    /* STATUS COLORS */
+    --status-occupied: #60DBA0;
+    --status-reading: #FAD200;
+    --status-error: #E7000B;
+    --status-vacant: #D5D5D5;
+
+    /* REGULAR COLORS */
+    --color-green: #00A63E;
+    --color-green-hover: #59C582;
+    --color-green-disabled: #CCEDD8;
+    --color-red: #E7000B;
+    --color-red-hover: #EF5960;
+    --color-red-disabled: #FACCCE;
+
+    /* TEXT COLORS */
+    --text-black: #151515;
+    --text-gray: #767676;
+    --text-disabled: #ADADAD;
+    --text-white: #FAFAFA;
+
+    /* CONTAINER COLORS */
+    --container-white: #FAFAFA;
+    --container-light: #F6F6F6;
+    --container-light-gray: #EBEBEA;
+    --container-gray: #E0DFDE;
+    --container-black: #151515;
+
+    /* STROKE COLORS */
+    --stroke-faded: #15151514;
+    --stroke-white: #FAFAFA;
+    --stroke-gray: #D9D9D6;
+    --stroke-black: #151515;
+}
