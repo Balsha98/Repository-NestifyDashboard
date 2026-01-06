@@ -9,7 +9,7 @@
 /* HEADER DASHBOARD VIEW CONTAINER */
 .header-dashboard-view-container {
     display: flex;
-    align-items: start;
+    align-items: flex-start;
     justify-content: space-between;
 }
 

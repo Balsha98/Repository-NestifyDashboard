@@ -1,17 +1,20 @@
 import { useState } from "react";
 // IMPORTED MODULES
 import Nav from "../partials/Nav";
+import BirdBox from "../partials/modals/BirdBox";
 
 const DashboardView = function () {
+	const [isAddingBox, setIsAddingBox] = useState(true);
 	const [selectBirdBox, setSelectBirdBox] = useState(false);
 
-	const handleSelectBirdBox = function () {
-		setSelectBirdBox((value) => !value);
-	};
+	const handleToggleBirdBoxModal = () => setIsAddingBox((value) => !value);
+
+	const handleSelectBirdBox = () => setSelectBirdBox((value) => !value);
 
 	return (
 		<>
 			<Nav></Nav>
+			{isAddingBox && <BirdBox onToggleBirdBoxModal={handleToggleBirdBoxModal}></BirdBox>}
 			<div className="div-main-edge-container">
 				<div className="div-dashboard-view-container">
 					<header className="header-dashboard-view-container">
