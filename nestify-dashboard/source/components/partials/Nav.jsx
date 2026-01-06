@@ -1,5 +1,6 @@
 // IMPORTED MODULES
 import Logo from "./Logo";
+import Logout from "./modals/Logout";
 // IMPORTED STYLESHEETS
 import "../../assets/css/partials/nav.css";
 
