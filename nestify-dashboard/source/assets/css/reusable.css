@@ -32,7 +32,7 @@
 
 /* BUTTON FORM SUBMIT */
 .btn-form-submit {
-    display: inherit;
+    display: flex;
     align-items: center;
     justify-content: center;
     gap: 0.6rem;

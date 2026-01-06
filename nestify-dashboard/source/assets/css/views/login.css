@@ -29,8 +29,8 @@ body {
 /* LOGIN VIEW FORM CONTAINER */
 .div-login-view-form-container {
     position: relative;
-    display: inherit;
-    flex-direction: inherit;
+    display: flex;
+    flex-direction: column;
     gap: 1.6rem;
 }
 
@@ -47,8 +47,8 @@ body {
 
 /* HEADER LOGIN VIEW FORM CONTAINER */
 .header-login-view-form-container {
-    display: inherit;
-    flex-direction: inherit;
+    display: flex;
+    flex-direction: column;
     gap: 0.2rem;
     text-align: center;
 }
@@ -63,8 +63,8 @@ body {
 
 /* FORM LOGIN VIEW CONTAINER */
 .form-login-view-container {
-    display: inherit;
-    flex-direction: inherit;
+    display: flex;
+    flex-direction: column;
     gap: 1.6rem;
 }
 
