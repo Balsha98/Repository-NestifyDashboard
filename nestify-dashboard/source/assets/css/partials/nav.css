@@ -1,14 +1,17 @@
 /* MAIN NAV CONTAINER */
 .div-main-nav-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     padding: 1.6rem 2.4rem;
     background-color: var(--container-white);
     box-shadow: 0 0.2rem 0.4rem rgba(0, 0, 0, 0.2);
 }
 
-.div-main-nav-container>img {
+.div-main-nav-container .div-main-edge-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.div-main-nav-container .div-main-edge-container img {
     width: 16rem;
 }
 
