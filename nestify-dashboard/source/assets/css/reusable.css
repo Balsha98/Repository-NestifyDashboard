@@ -1,3 +1,10 @@
+/* MAIN EDGE CONTAINER */
+.div-main-edge-container {
+    width: 100%;
+    max-width: 140rem;
+    margin: 0 auto;
+}
+
 /* FORM INPUT CONTAINER */
 .div-form-input-container {
     position: relative;
