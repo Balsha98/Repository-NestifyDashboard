@@ -11,6 +11,10 @@ html {
     scroll-behavior: smooth;
 }
 
+body {
+    background-color: var(--container-light);
+}
+
 body::-webkit-scrollbar {
     display: none;
 }
@@ -23,4 +27,8 @@ input,
 textarea {
     outline: unset;
     caret-color: var(--text-black);
+}
+
+a:link {
+    text-decoration: unset;
 }
