@@ -1,6 +1,6 @@
 import Logo from "../partials/Logo";
-import LoginForm from "../partials/auth/LoginForm";
-import LoginCopyright from "../partials/auth/LoginCopyright";
+import LoginForm from "../partials/views/auth/LoginForm";
+import LoginCopyright from "../partials/views/auth/LoginCopyright";
 
 const LoginView = function () {
 	return (
