@@ -1,11 +1,12 @@
 import { useState } from "react";
+// IMPORTED MODULES
 import Nav from "../partials/Nav";
 
 const DashboardView = function () {
 	const [selectBirdBox, setSelectBirdBox] = useState(false);
 
 	const handleSelectBirdBox = function () {
-		setSelectBirdBox(!selectBirdBox);
+		setSelectBirdBox((value) => !value);
 	};
 
 	return (
