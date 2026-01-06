@@ -1,5 +1,11 @@
+import Nav from "../partials/Nav";
+
 const DashboardView = function () {
-	return <></>;
+	return (
+		<>
+			<Nav></Nav>
+		</>
+	);
 };
 
 export default DashboardView;
