@@ -4,7 +4,7 @@ import Nav from "../partials/Nav";
 import BirdBox from "../partials/modals/BirdBox";
 
 const DashboardView = function () {
-	const [isAddingBox, setIsAddingBox] = useState(true);
+	const [isAddingBox, setIsAddingBox] = useState(false);
 	const [selectBirdBox, setSelectBirdBox] = useState(false);
 
 	const handleToggleBirdBoxModal = () => setIsAddingBox((value) => !value);
@@ -56,7 +56,7 @@ const DashboardView = function () {
 									</ul>
 								)}
 							</div>
-							<button>
+							<button className={`${isAddingBox ? "active" : ""}`} onClick={handleToggleBirdBoxModal}>
 								<ion-icon src="/media/icons/icon-plus.svg"></ion-icon>
 							</button>
 						</div>
