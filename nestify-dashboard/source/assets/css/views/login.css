@@ -90,7 +90,7 @@ body {
     padding: 0.8rem 0.8rem 0.8rem 4rem;
     background-color: var(--container-light-gray);
     border: unset;
-    border-radius: 0.4rem;
+    border-radius: 0.8rem;
 }
 
 /* BUTTON FORM SUBMIT */
