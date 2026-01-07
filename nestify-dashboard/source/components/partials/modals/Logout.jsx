@@ -11,7 +11,7 @@ const Logout = function ({ onToggleLogoutModal }) {
 				</header>
 				<div className="div-logout-modal-info-container">
 					<p>Are you sure you want to logout from the Conservation Dashboard?</p>
-					<p>You are currently logged in: <span>Username</span></p>
+					<p>You are currently logged in as: <span>Username</span></p>
 				</div>
                 <footer className="footer-logout-modal">
                     <button onClick={onToggleLogoutModal}>

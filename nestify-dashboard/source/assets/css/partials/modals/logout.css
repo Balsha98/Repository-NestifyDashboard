@@ -44,11 +44,11 @@
 .div-logout-modal-info-container {
     display: flex;
     flex-direction: column;
-    gap: 0.6rem;
+    gap: 0.4rem;
 }
 
 .div-logout-modal-info-container p {
-    font-size: 1.2rem;
+    font-size: 1.4rem;
 }
 
 .div-logout-modal-info-container p span {
