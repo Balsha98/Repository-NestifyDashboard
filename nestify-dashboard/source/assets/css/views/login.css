@@ -68,24 +68,25 @@ body {
     gap: 1.6rem;
 }
 
-/* FORM INPUT CONTAINER */
-.div-form-input-container {
+/* FORM LOGIN INPUT CONTAINER */
+.div-form-login-input-container {
     position: relative;
 }
 
-.div-form-input-container label {
+.div-form-login-input-container label {
     position: absolute;
     top: 25%;
     left: 2rem;
     transform: translateX(-50%);
+    cursor: pointer;
 }
 
-.div-form-input-container label ion-icon {
+.div-form-login-input-container label ion-icon {
     font-size: 1.6rem;
     color: var(--text-gray);
 }
 
-.div-form-input-container input {
+.div-form-login-input-container input {
     width: 100%;
     padding: 0.8rem 0.8rem 0.8rem 4rem;
     background-color: var(--container-light-gray);
@@ -93,8 +94,8 @@ body {
     border-radius: 0.8rem;
 }
 
-/* BUTTON FORM SUBMIT */
-.btn-form-submit {
+/* BUTTON FORM LOGIN SUBMIT */
+.btn-form-login-submit {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -109,16 +110,16 @@ body {
     cursor: pointer;
 }
 
-.btn-form-submit:hover {
+.btn-form-login-submit:hover {
     background-color: var(--color-green-hover);
 }
 
-.btn-form-submit ion-icon {
+.btn-form-login-submit ion-icon {
     font-size: 1.6rem;
 }
 
-.btn-form-submit ion-icon,
-.btn-form-submit span {
+.btn-form-login-submit ion-icon,
+.btn-form-login-submit span {
     color: inherit;
 }
 

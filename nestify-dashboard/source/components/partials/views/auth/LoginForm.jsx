@@ -5,35 +5,20 @@ const LogoFormView = function () {
 				<h2>Conservation Dashboard</h2>
 				<p>Enter your credentials to access the dashboard.</p>
 			</header>
-			<form
-				className="form-login-view-container"
-				action="/backend/auth/route"
-				method="POST"
-			>
-				<div className="div-form-input-container">
+			<form className="form-login-view-container" action="/backend/auth/route" method="POST">
+				<div className="div-form-login-input-container">
 					<label htmlFor="username">
 						<ion-icon src="/media/icons/icon-user.svg"></ion-icon>
 					</label>
-					<input
-						id="username"
-						type="text"
-						name="username"
-						autoComplete="true"
-						placeholder="Enter your username..."
-					/>
+					<input id="username" type="text" name="username" autoComplete="true" placeholder="Enter your username..." />
 				</div>
-				<div className="div-form-input-container">
+				<div className="div-form-login-input-container">
 					<label htmlFor="password">
 						<ion-icon src="/media/icons/icon-password.svg"></ion-icon>
 					</label>
-					<input
-						id="password"
-						type="password"
-						name="password"
-						placeholder="Enter your password..."
-					/>
+					<input id="password" type="password" name="password" placeholder="Enter your password..." />
 				</div>
-				<button className="btn-form-submit" type="button">
+				<button className="btn-form-login-submit" type="button">
 					<ion-icon src="/media/icons/icon-sign-in.svg"></ion-icon>
 					<span>Sign In</span>
 				</button>
