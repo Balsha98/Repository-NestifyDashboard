@@ -11,9 +11,9 @@ const DashboardView = function () {
 	const [birdBoxData, setBirdBoxData] = useState(() => null);
 	const [isUploadingData, setIsUploadingData] = useState(false);
 
-	const handleToggleBirdBoxModal = () => setIsAddingBox((value) => !value);
-
 	const handleSelectBirdBox = () => setSelectBirdBox((value) => !value);
+
+	const handleToggleBirdBoxModal = () => setIsAddingBox((value) => !value);
 
 	const handleToggleUploadModal = () => setIsUploadingData((value) => !value);
 
