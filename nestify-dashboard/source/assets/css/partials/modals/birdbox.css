@@ -76,26 +76,27 @@
     gap: 1.6rem;
 }
 
-/* FORM MULTI INPUT CONTAINER */
-.div-form-multi-input-container {
+/* FORM BIRDBOX MULTI INPUT CONTAINER */
+.div-form-birdbox-multi-input-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     column-gap: 1.6rem;
 }
 
-/* FORM INPUT CONTAINER */
-.div-form-input-container {
+/* FORM BIRDBOX INPUT CONTAINER */
+.div-form-birdbox-input-container {
     position: relative;
     display: flex;
     flex-direction: column;
     gap: 0.4rem;
 }
 
-.div-form-input-container label {
+.div-form-birdbox-input-container label {
     font-size: 1.4rem;
+    cursor: pointer;
 }
 
-.div-form-input-container input {
+.div-form-birdbox-input-container input {
     width: 100%;
     padding: 0.8rem;
     background-color: var(--container-light-gray);
