@@ -2,14 +2,20 @@ import { useState } from "react";
 // IMPORTED MODULES
 import Nav from "../partials/Nav";
 import BirdBox from "../partials/modals/BirdBox";
+import Upload from "../partials/signs/Upload";
 
 const DashboardView = function () {
 	const [isAddingBox, setIsAddingBox] = useState(false);
 	const [selectBirdBox, setSelectBirdBox] = useState(false);
 
+	const [birdBoxData, setBirdBoxData] = useState(null);
+	const [isUploadingData, setIsUploadingData] = useState(true);
+
 	const handleToggleBirdBoxModal = () => setIsAddingBox((value) => !value);
 
 	const handleSelectBirdBox = () => setSelectBirdBox((value) => !value);
+
+	const handleToggleUploadModal = () => setIsUploadingData((value) => !value);
 
 	return (
 		<>
@@ -61,6 +67,7 @@ const DashboardView = function () {
 							</button>
 						</div>
 					</header>
+					{birdBoxData || <Upload isUploadingData={isUploadingData} onToggleUploadModal={handleToggleUploadModal}></Upload>}
 				</div>
 			</div>
 		</>
