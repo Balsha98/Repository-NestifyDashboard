@@ -1,0 +1,126 @@
+/* UPLOAD MODAL CONTAINER */
+.div-upload-modal-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.2);
+    z-index: 9999;
+}
+
+/* UPLOAD MODAL */
+.div-upload-modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+    width: 48rem;
+    padding: 2.4rem;
+    background-color: var(--container-white);
+    box-shadow: 0 0.2rem 0.4rem rgba(0, 0, 0, 0.1);
+    border-radius: 0.4rem;
+    transform: translate(-50%, -50%);
+}
+
+/* HEADER UPLOAD MODAL */
+.header-upload-modal {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+/* HEADER UPLOAD MODAL INFO CONTAINER */
+.div-header-upload-modal-info-container {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+}
+
+.div-header-upload-modal-info-container ion-icon {
+    font-size: 2.4rem;
+    color: var(--brand-blue-accent);
+}
+
+.div-header-upload-modal-info-container h2 {
+    font-size: 1.6rem;
+}
+
+.header-upload-modal button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.8rem;
+    background-color: var(--container-white);
+    box-shadow: inset 0 0 0 0.12rem var(--container-light-gray);
+    border: unset;
+    border-radius: 0.8rem;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.header-upload-modal button:hover {
+    background-color: var(--container-light);
+}
+
+.header-upload-modal button ion-icon {
+    font-size: 1.4rem;
+}
+
+/* FORM UPLOAD MODAL */
+.form-upload-modal {
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+}
+
+/* FORM INPUT CONTAINER */
+.div-form-input-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+}
+
+.div-form-input-container label {
+    font-size: 1.4rem;
+}
+
+.div-form-input-container input {
+    width: 100%;
+    padding: 0.8rem;
+    background-color: var(--container-light-gray);
+    border: unset;
+    border-radius: 0.8rem;
+}
+
+/* BUTTON FORM UPLOAD SUBMIT */
+.btn-form-upload-submit {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.6rem;
+    padding: 0.8rem;
+    font-size: 1.4rem;
+    color: var(--text-white);
+    background-color: var(--brand-blue-accent);
+    border: unset;
+    border-radius: 0.8rem;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.btn-form-upload-submit:hover {
+    background-color: var(--brand-blue-core);
+}
+
+.btn-form-upload-submit ion-icon {
+    font-size: 1.6rem;
+}
+
+.btn-form-upload-submit ion-icon,
+.btn-form-upload-submit span {
+    color: inherit;
+}
