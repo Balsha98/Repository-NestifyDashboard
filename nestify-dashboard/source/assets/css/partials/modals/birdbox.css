@@ -103,8 +103,8 @@
     border-radius: 0.8rem;
 }
 
-/* BUTTON FORM SUBMIT */
-.btn-form-submit {
+/* BUTTON FORM BIRDBOX SUBMIT */
+.btn-form-birdbox-submit {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -114,20 +114,20 @@
     color: var(--text-white);
     background-color: var(--color-green);
     border: unset;
-    border-radius: 0.4rem;
+    border-radius: 0.8rem;
     transition: all 0.3s ease-in-out;
     cursor: pointer;
 }
 
-.btn-form-submit:hover {
+.btn-form-birdbox-submit:hover {
     background-color: var(--color-green-hover);
 }
 
-.btn-form-submit ion-icon {
+.btn-form-birdbox-submit ion-icon {
     font-size: 1.6rem;
 }
 
-.btn-form-submit ion-icon,
-.btn-form-submit span {
+.btn-form-birdbox-submit ion-icon,
+.btn-form-birdbox-submit span {
     color: inherit;
 }

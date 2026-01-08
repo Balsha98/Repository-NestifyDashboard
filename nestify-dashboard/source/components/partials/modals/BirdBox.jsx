@@ -33,7 +33,7 @@ const BirdBox = function ({ onToggleBirdBoxModal }) {
                             <input id="longitude" type="text" name="longitude" placeholder="--" />
                         </div>
                     </div>
-                    <button className="btn-form-submit" type="button">
+                    <button className="btn-form-birdbox-submit" type="button">
                         <ion-icon src="/media/icons/icon-selected.svg"></ion-icon>
                         <span>Add BirdBox</span>
                     </button>
