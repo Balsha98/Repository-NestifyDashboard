@@ -1,15 +1,15 @@
 import { useState } from "react";
 // IMPORTED MODULES
 import Nav from "../partials/Nav";
-import BirdBox from "../partials/modals/BirdBox";
-import Upload from "../partials/signs/Upload";
+import BirdBoxModal from "../partials/modals/BirdBox";
+import UploadSign from "../partials/signs/Upload";
+import UploadModal from "../partials/modals/Upload";
 
 const DashboardView = function () {
 	const [isAddingBox, setIsAddingBox] = useState(false);
 	const [selectBirdBox, setSelectBirdBox] = useState(false);
-
-	const [birdBoxData, setBirdBoxData] = useState(null);
-	const [isUploadingData, setIsUploadingData] = useState(true);
+	const [birdBoxData, setBirdBoxData] = useState(() => null);
+	const [isUploadingData, setIsUploadingData] = useState(false);
 
 	const handleToggleBirdBoxModal = () => setIsAddingBox((value) => !value);
 
@@ -20,7 +20,8 @@ const DashboardView = function () {
 	return (
 		<>
 			<Nav></Nav>
-			{isAddingBox && <BirdBox onToggleBirdBoxModal={handleToggleBirdBoxModal}></BirdBox>}
+			{isAddingBox && <BirdBoxModal onToggleBirdBoxModal={handleToggleBirdBoxModal}></BirdBoxModal>}
+			{isUploadingData && <UploadModal onToggleUploadModal={handleToggleUploadModal}></UploadModal>}
 			<div className="div-main-edge-container">
 				<div className="div-dashboard-view-container">
 					<header className="header-dashboard-view-container">
@@ -67,7 +68,12 @@ const DashboardView = function () {
 							</button>
 						</div>
 					</header>
-					{birdBoxData || <Upload isUploadingData={isUploadingData} onToggleUploadModal={handleToggleUploadModal}></Upload>}
+					{birdBoxData || (
+						<UploadSign
+							isUploadingData={isUploadingData}
+							onToggleUploadModal={handleToggleUploadModal}
+						></UploadSign>
+					)}
 				</div>
 			</div>
 		</>
