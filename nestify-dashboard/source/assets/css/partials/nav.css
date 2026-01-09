@@ -64,6 +64,10 @@
     cursor: pointer;
 }
 
+.main-nav-container button span {
+    font-size: 1.4rem;
+}
+
 .main-nav-container button:hover,
 .main-nav-container button.active {
     background-color: var(--container-light);
