@@ -1,6 +1,6 @@
 import Logo from "../partials/Logo";
 import LoginForm from "../partials/views/auth/LoginForm";
-import LoginCopyright from "../partials/views/auth/LoginCopyright";
+import Copyright from "../partials/views/auth/Copyright";
 
 const LoginView = function () {
 	return (
@@ -9,7 +9,7 @@ const LoginView = function () {
 				<Logo></Logo>
 				<LoginForm></LoginForm>
 			</div>
-			<LoginCopyright></LoginCopyright>
+			<Copyright></Copyright>
 		</>
 	);
 };

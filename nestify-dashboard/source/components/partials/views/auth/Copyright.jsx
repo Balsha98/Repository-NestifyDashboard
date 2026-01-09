@@ -1,4 +1,4 @@
-const LogoCopyrightView = function () {
+const Copyright = function () {
 	return (
 		<div className="div-copyright-container">
 			<p>Smart BirdBox Monitoring System v1.0</p>
@@ -7,4 +7,4 @@ const LogoCopyrightView = function () {
 	);
 };
 
-export default LogoCopyrightView;
+export default Copyright;
