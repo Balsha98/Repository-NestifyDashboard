@@ -12,16 +12,16 @@ const Container = function ({ isUploadingData, onToggleUploadModal }) {
 	};
 
 	return (
-		<div className="div-dashboard-general-container">
-			<header className="header-dashboard-general-container">
-				<ul className="dashboard-general-toggle-list">
+		<div className="div-dashboard-view-general-container">
+			<header className="header-dashboard-view-general-container">
+				<ul className="dashboard-view-general-toggle-list">
 					{innerViewNames.map((innerViewName, i) => {
 						const lowerCasedName = innerViewName.toLowerCase();
 
 						return (
 							<li
 								key={i}
-								className={`dashboard-general-toggle-list-item ${selectedInnerView === lowerCasedName ? "active" : ""}`}
+								className={`dashboard-view-general-toggle-list-item ${selectedInnerView === lowerCasedName ? "active" : ""}`}
 								onClick={handleToggleInnerView}
 								data-inner-view-name={lowerCasedName}
 							>
@@ -30,7 +30,7 @@ const Container = function ({ isUploadingData, onToggleUploadModal }) {
 						);
 					})}
 				</ul>
-				<div className="div-dashboard-general-actions-container">
+				<div className="div-dashboard-view-general-actions-container">
 					<button>
 						<ion-icon src="/media/icons/icon-download.svg"></ion-icon>
 						<span>Export Data</span>
