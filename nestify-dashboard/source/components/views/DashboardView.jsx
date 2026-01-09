@@ -4,11 +4,12 @@ import Nav from "../partials/Nav";
 import BirdBoxModal from "../partials/modals/BirdBox";
 import UploadSign from "../partials/signs/Upload";
 import UploadModal from "../partials/modals/Upload";
+import Container from "../partials/views/dashboard/Container";
 
 const DashboardView = function () {
 	const [isAddingBox, setIsAddingBox] = useState(false);
 	const [selectBirdBox, setSelectBirdBox] = useState(false);
-	const [birdBoxData, setBirdBoxData] = useState(() => null);
+	const [birdBoxData, setBirdBoxData] = useState(() => true);
 	const [isUploadingData, setIsUploadingData] = useState(false);
 
 	const handleSelectBirdBox = () => setSelectBirdBox((value) => !value);
@@ -68,12 +69,8 @@ const DashboardView = function () {
 							</button>
 						</div>
 					</header>
-					{birdBoxData || (
-						<UploadSign
-							isUploadingData={isUploadingData}
-							onToggleUploadModal={handleToggleUploadModal}
-						></UploadSign>
-					)}
+					{birdBoxData || <UploadSign isUploadingData={isUploadingData} onToggleUploadModal={handleToggleUploadModal}></UploadSign>}
+					{birdBoxData && <Container isUploadingData={isUploadingData} onToggleUploadModal={handleToggleUploadModal}></Container>}
 				</div>
 			</div>
 		</>
