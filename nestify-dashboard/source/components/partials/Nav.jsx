@@ -21,13 +21,13 @@ const Nav = function () {
 					<nav className="main-nav-container">
 						<ul className="main-nav-container-list">
 							<li className="main-nav-container-list-item active">
-								<a href="#">Bird Boxes</a>
+								<a href="/source/assets/views/dashboard.html">Dashboard</a>
 							</li>
 							<li className="main-nav-container-list-item">
-								<a href="#">Report</a>
+								<a href="/source/assets/views/report.html">Report</a>
 							</li>
 							<li className="main-nav-container-list-item">
-								<a href="#">Map</a>
+								<a href="/source/assets/views/map.html">Map</a>
 							</li>
 						</ul>
 						<button className={`${isLoggingOut ? "active" : ""}`} onClick={handleToggleLogoutModal}>
