@@ -26,7 +26,7 @@ const DashboardView = function () {
 			<div className="div-main-edge-container">
 				<div className="div-dashboard-view-container">
 					<header className="header-dashboard-view-container">
-						<div className="div-dashboard-view-birdbox-info-container">
+						<div className="div-header-dashboard-view-birdbox-info-container">
 							<h2>BirdBox 1</h2>
 							<p>Cornwall Preserve</p>
 						</div>

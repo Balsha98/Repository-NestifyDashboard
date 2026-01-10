@@ -13,18 +13,18 @@
     justify-content: space-between;
 }
 
-/* DASHBOARD VIEW BIRDBOX INFO CONTAINER */
-.div-dashboard-view-birdbox-info-container {
+/* HEADER DASHBOARD VIEW BIRDBOX INFO CONTAINER */
+.div-header-dashboard-view-birdbox-info-container {
     display: flex;
     flex-direction: column;
     gap: 0.4rem;
 }
 
-.div-dashboard-view-birdbox-info-container h2 {
+.div-header-dashboard-view-birdbox-info-container h2 {
     font-size: 2rem;
 }
 
-.div-dashboard-view-birdbox-info-container p {
+.div-header-dashboard-view-birdbox-info-container p {
     font-size: 1.4rem;
     color: var(--text-gray);
 }
@@ -102,6 +102,7 @@
     box-shadow: inset 0 0 0 0.12rem var(--stroke-light-gray), 0 0.2rem 0.4rem rgba(0, 0, 0, 0.1);
     border-radius: 0.8rem;
     transform: translateY(100%);
+    z-index: 9998;
 }
 
 /* BIRDBOX OPTIONS LIST ITEM */
