@@ -30,6 +30,7 @@
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
+    gap: 1.6rem;
 }
 
 /* HEADER DETAILS MODAL INFO CONTAINER */
