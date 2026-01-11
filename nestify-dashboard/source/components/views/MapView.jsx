@@ -17,12 +17,12 @@ const MapView = function () {
 	return (
 		<>
 			<Nav></Nav>
-			{isViewingDetails && <DetailsModal onToggleDetailsModal={handleToggleDetailsModal}></DetailsModal>}
-			{isAddingBox && <BirdBoxModal onToggleBirdBoxModal={handleToggleBirdBoxModal}></BirdBoxModal>}
+			{isViewingDetails && <DetailsModal onToggleDetailsModal={handleToggleDetailsModal} />}
+			{isAddingBox && <BirdBoxModal onToggleBirdBoxModal={handleToggleBirdBoxModal} />}
 			<div className="div-main-edge-container">
 				<div className="div-map-view-container">
-					<LeafletMap></LeafletMap>
-					<BirdBoxesList isAddingBox={isAddingBox} onToggleBirdBoxModal={handleToggleBirdBoxModal}></BirdBoxesList>
+					<LeafletMap />
+					<BirdBoxesList isAddingBox={isAddingBox} onToggleBirdBoxModal={handleToggleBirdBoxModal} />
 				</div>
 			</div>
 		</>

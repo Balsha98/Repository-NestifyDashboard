@@ -6,6 +6,6 @@ const root = createRoot(document.querySelector(".root"));
 
 root.render(
 	<StrictMode>
-		<ReportView></ReportView>
+		<ReportView />
 	</StrictMode>
 );

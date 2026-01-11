@@ -17,7 +17,7 @@ const Nav = function () {
 			{isLoggingOut && <Logout onToggleLogoutModal={handleToggleLogoutModal}></Logout>}
 			<div className="div-main-nav-container">
 				<div className="div-main-edge-container">
-					<Logo></Logo>
+					<Logo />
 					<nav className="main-nav-container">
 						<ul className="main-nav-container-list">
 							<li className="main-nav-container-list-item active">

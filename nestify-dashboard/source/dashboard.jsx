@@ -6,6 +6,6 @@ const root = createRoot(document.querySelector(".root"));
 
 root.render(
 	<StrictMode>
-		<DashboardView></DashboardView>
+		<DashboardView />
 	</StrictMode>
 );

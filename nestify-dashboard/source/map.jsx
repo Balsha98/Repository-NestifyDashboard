@@ -6,6 +6,6 @@ const root = createRoot(document.querySelector(".root"));
 
 root.render(
 	<StrictMode>
-		<MapView></MapView>
+		<MapView />
 	</StrictMode>
 );
