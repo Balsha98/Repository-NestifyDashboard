@@ -105,7 +105,7 @@
 }
 
 /* BUTTON FORM BIRDBOX SUBMIT */
-.btn-form-birdbox-submit {
+.form-birdbox-modal button {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -120,15 +120,15 @@
     cursor: pointer;
 }
 
-.btn-form-birdbox-submit:hover {
+.form-birdbox-modal button:hover {
     background-color: var(--color-green-hover);
 }
 
-.btn-form-birdbox-submit ion-icon {
+.form-birdbox-modal button ion-icon {
     font-size: 1.6rem;
 }
 
-.btn-form-birdbox-submit ion-icon,
-.btn-form-birdbox-submit span {
+.form-birdbox-modal button ion-icon,
+.form-birdbox-modal button span {
     color: inherit;
 }

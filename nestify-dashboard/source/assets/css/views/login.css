@@ -95,7 +95,7 @@ body {
 }
 
 /* BUTTON FORM LOGIN SUBMIT */
-.btn-form-login-submit {
+.form-login-modal button {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -110,16 +110,16 @@ body {
     cursor: pointer;
 }
 
-.btn-form-login-submit:hover {
+.form-login-modal button:hover {
     background-color: var(--color-green-hover);
 }
 
-.btn-form-login-submit ion-icon {
+.form-login-modal button ion-icon {
     font-size: 1.6rem;
 }
 
-.btn-form-login-submit ion-icon,
-.btn-form-login-submit span {
+.form-login-modal button ion-icon,
+.form-login-modal button span {
     color: inherit;
 }
 

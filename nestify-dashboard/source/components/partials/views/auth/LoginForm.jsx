@@ -18,7 +18,7 @@ const LogoFormView = function () {
 					</label>
 					<input id="password" type="password" name="password" placeholder="Enter your password..." />
 				</div>
-				<button className="btn-form-login-submit" type="button">
+				<button type="button">
 					<ion-icon src="/media/icons/icon-sign-in.svg"></ion-icon>
 					<span>Sign In</span>
 				</button>

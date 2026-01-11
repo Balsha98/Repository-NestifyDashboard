@@ -199,7 +199,7 @@
 }
 
 /* BUTTON FORM UPLOAD SUBMIT */
-.btn-form-upload-submit {
+.form-upload-modal button {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -214,15 +214,15 @@
     cursor: pointer;
 }
 
-.btn-form-upload-submit:hover {
+.form-upload-modal button:hover {
     background-color: var(--brand-blue-core);
 }
 
-.btn-form-upload-submit ion-icon {
+.form-upload-modal button ion-icon {
     font-size: 1.6rem;
 }
 
-.btn-form-upload-submit ion-icon,
-.btn-form-upload-submit span {
+.form-upload-modal button ion-icon,
+.form-upload-modal button span {
     color: inherit;
 }

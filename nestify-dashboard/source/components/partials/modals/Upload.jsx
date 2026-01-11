@@ -64,7 +64,7 @@ const Upload = function ({ onToggleUploadModal }) {
 					<div className="div-form-upload-notice-container">
 						<p>Please make sure that the desired box matches the box data.</p>
 					</div>
-					<button className="btn-form-upload-submit" type="button">
+					<button type="button">
 						<ion-icon src="/media/icons/icon-upload.svg"></ion-icon>
 						<span>Upload Data</span>
 					</button>
