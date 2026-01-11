@@ -7,7 +7,7 @@ import LeafletMap from "../partials/views/map/Leaflet";
 import BirdBoxesList from "../partials/views/map/BirdBoxes";
 
 const MapView = function () {
-	const [isViewingDetails, setIsViewingDetails] = useState(true);
+	const [isViewingDetails, setIsViewingDetails] = useState(false);
 	const [isAddingBox, setIsAddingBox] = useState(false);
 
 	const handleToggleDetailsModal = () => setIsViewingDetails((value) => !value);
