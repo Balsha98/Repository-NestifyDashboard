@@ -7,7 +7,7 @@ const Details = function ({ onToggleDetailsModal }) {
 				<header className="header-details-modal">
 					<div className="div-header-details-modal-info-container">
 						<ion-icon src="/media/icons/icon-plus.svg"></ion-icon>
-						<h2>Add BirdBox</h2>
+						<h2>BirdBox 1 - Cornwall Preserve</h2>
 					</div>
 					<button onClick={onToggleDetailsModal}>
 						<ion-icon src="/media/icons/icon-close.svg"></ion-icon>
@@ -54,7 +54,7 @@ const Details = function ({ onToggleDetailsModal }) {
 						</ul>
 					</div>
 					<a href="#">
-						<ion-icon src="/media/icons/icon-info.svg"></ion-icon>
+						{/* <ion-icon src=""></ion-icon> */}
 						<span>View Full Details</span>
 					</a>
 				</div>
