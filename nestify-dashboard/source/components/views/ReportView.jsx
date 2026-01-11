@@ -1,7 +1,7 @@
-// IMPORTED MODULES
-import Nav from "../partials/Nav";
 // IMPORTED STYLESHEETS
 import "../../assets/css/views/report.css";
+// IMPORTED MODULES
+import Nav from "../partials/Nav";
 
 const ReportView = function () {
 	return (
