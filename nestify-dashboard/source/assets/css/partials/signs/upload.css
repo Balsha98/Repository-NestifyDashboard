@@ -17,7 +17,6 @@
     justify-content: center;
     gap: 0.6rem;
     padding: 0.8rem 1.2rem;
-    font-size: 1.4rem;
     color: var(--text-white);
     background-color: var(--brand-blue-accent);
     border: unset;
@@ -28,10 +27,11 @@
 
 .div-upload-sign-container button ion-icon {
     font-size: 1.6rem;
+    color: inherit;
 }
 
-.div-upload-sign-container button ion-icon,
 .div-upload-sign-container button span {
+    font-size: 1.4rem;
     color: inherit;
 }
 
