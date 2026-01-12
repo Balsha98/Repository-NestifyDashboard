@@ -27,6 +27,7 @@ input,
 textarea {
     outline: unset;
     caret-color: var(--text-black);
+    resize: unset;
 }
 
 a:link {
