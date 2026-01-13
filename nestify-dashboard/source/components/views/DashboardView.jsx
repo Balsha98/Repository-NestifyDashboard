@@ -5,6 +5,7 @@ import BirdBoxModal from "../partials/modals/BirdBox";
 import UploadSign from "../partials/signs/Upload";
 import UploadModal from "../partials/modals/Upload";
 import Container from "../partials/views/dashboard/Container";
+import Maintenance from "../partials/views/dashboard/Maintenance";
 import Settings from "../partials/views/dashboard/Settings";
 
 const DashboardView = function () {
@@ -12,7 +13,7 @@ const DashboardView = function () {
     const [selectBirdBox, setSelectBirdBox] = useState(false);
     const [birdBoxData, setBirdBoxData] = useState(() => true);
     const [isUploadingData, setIsUploadingData] = useState(false);
-    const [selectedInnerView, setSelectedInnerView] = useState("settings");
+    const [selectedInnerView, setSelectedInnerView] = useState("maintenance");
 
     const handleSelectBirdBox = () => setSelectBirdBox((value) => !value);
 
@@ -73,9 +74,7 @@ const DashboardView = function () {
                             </button>
                         </div>
                     </header>
-                    {birdBoxData || (
-                        <UploadSign isUploadingData={isUploadingData} onToggleUploadModal={handleToggleUploadModal} />
-                    )}
+                    {birdBoxData || <UploadSign isUploadingData={isUploadingData} onToggleUploadModal={handleToggleUploadModal} />}
                     {birdBoxData && (
                         <>
                             <Container
@@ -84,6 +83,7 @@ const DashboardView = function () {
                                 selectedInnerView={selectedInnerView}
                                 onToggleInnerView={handleToggleInnerView}
                             />
+                            {selectedInnerView === "maintenance" && <Maintenance />}
                             {selectedInnerView === "settings" && <Settings />}
                         </>
                     )}
