@@ -1,0 +1,149 @@
+/* DASHBOARD VIEW MAINTENANCE CONTAINER */
+.div-dashboard-view-maintenance-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 2.4rem;
+}
+
+/* DASHBOARD VIEW MAINTENANCE LOG CONTAINER */
+.div-dashboard-view-maintenance-log-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2.4rem;
+    padding: 1.6rem;
+    background-color: var(--container-white);
+    box-shadow: inset 0 0 0 0.12rem var(--stroke-light-gray);
+    border-radius: 0.4rem;
+}
+
+.div-dashboard-view-maintenance-log-container h2 {
+    font-size: 1.4rem;
+}
+
+/* DASHBOARD VIEW MAINTENANCE LOG LIST */
+.dashboard-view-maintenance-log-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+
+/* DASHBOARD VIEW MAINTENANCE LOG LIST ITEM */
+.dashboard-view-maintenance-log-list-item {
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+    padding: 1.2rem;
+    box-shadow: inset 0 0 0 0.12rem var(--stroke-light-gray);
+    border-radius: 0.4rem;
+}
+
+/* HEADER DASHBOARD VIEW MAINTENANCE LOG LIST ITEM */
+.header-dashboard-view-maintenance-log-list-item {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+}
+
+.header-dashboard-view-maintenance-log-list-item p {
+    font-size: 1.6rem;
+    font-weight: 700;
+}
+
+.header-dashboard-view-maintenance-log-list-item span {
+    font-size: 1.4rem;
+}
+
+.dashboard-view-maintenance-log-list-item > span {
+    font-size: 1.2rem;
+    color: var(--text-gray);
+}
+
+.div-dashboard-view-maintenance-log-container button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.6rem;
+    padding: 0.8rem 1.2rem;
+    background-color: var(--container-white);
+    box-shadow: inset 0 0 0 0.12rem var(--stroke-light-gray);
+    border: unset;
+    border-radius: 0.8rem;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.div-dashboard-view-maintenance-log-container button:hover {
+    background-color: var(--container-light);
+}
+
+.div-dashboard-view-maintenance-log-container button ion-icon {
+    font-size: 1.6rem;
+}
+
+.div-dashboard-view-maintenance-log-container button span {
+    font-size: 1.4rem;
+}
+
+/* DASHBOARD VIEW MAINTENANCE SCHEDULE CONTAINER */
+.div-dashboard-view-maintenance-schedule-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2.4rem;
+    padding: 1.6rem;
+    background-color: var(--container-white);
+    box-shadow: inset 0 0 0 0.12rem var(--stroke-light-gray);
+    border-radius: 0.4rem;
+}
+
+.div-dashboard-view-maintenance-schedule-container h2 {
+    font-size: 1.4rem;
+}
+
+/* DASHBOARD VIEW MAINTENANCE SCHEDULE LIST */
+.dashboard-view-maintenance-schedule-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+
+/* DASHBOARD VIEW MAINTENANCE SCHEDULE LIST ITEM */
+.dashboard-view-maintenance-schedule-list-item {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+    padding: 1.2rem;
+    box-shadow: inset 0 0 0 0.12rem var(--stroke-light-gray);
+    border-radius: 0.4rem;
+}
+
+.dashboard-view-maintenance-schedule-list-item p {
+    font-size: 1.6rem;
+    font-weight: 700;
+}
+
+.dashboard-view-maintenance-schedule-list-item span {
+    font-size: 1.4rem;
+}
+
+.div-dashboard-view-maintenance-schedule-container button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.6rem;
+    padding: 0.8rem 1.2rem;
+    color: var(--text-white);
+    background-color: var(--container-black);
+    border: unset;
+    border-radius: 0.8rem;
+    cursor: pointer;
+}
+
+.div-dashboard-view-maintenance-schedule-container button ion-icon {
+    font-size: 1.6rem;
+    color: inherit;
+}
+
+.div-dashboard-view-maintenance-schedule-container button span {
+    font-size: 1.4rem;
+    color: inherit;
+}
