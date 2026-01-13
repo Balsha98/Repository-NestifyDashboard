@@ -1,6 +1,6 @@
 body {
     height: 100vh;
-    background-image: linear-gradient(to bottom right, #006938, #367E53);
+    background-image: linear-gradient(to bottom right, #006938, #367e53);
     background-attachment: fixed;
     background-size: cover;
 }
@@ -21,7 +21,7 @@ body {
     transform: translate(-50%, -50%);
 }
 
-.div-login-view-container>img {
+.div-login-view-container > img {
     width: 20rem;
     margin: 0 auto;
 }

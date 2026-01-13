@@ -81,7 +81,7 @@
     position: relative;
     display: flex;
     flex-direction: column;
-    gap: 0.4rem;
+    gap: 0.6rem;
 }
 
 .div-form-upload-input-container label,
