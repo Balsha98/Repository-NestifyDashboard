@@ -1,0 +1,106 @@
+.div-dashboard-view-gallery-container {
+    padding: 1.6rem;
+    background-color: var(--container-white);
+    box-shadow: inset 0 0 0 0.12rem var(--stroke-light-gray);
+    border-radius: 0.4rem;
+}
+
+.header-dashboard-view-gallery-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-dashboard-view-gallery-container h2 {
+    font-size: 1.4rem;
+}
+
+.div-header-dashboard-view-gallery-info-container {
+    display: flex;
+    align-items: center;
+    gap: 1.6rem;
+}
+
+.div-header-dashboard-view-gallery-info-container span {
+    font-size: 1.2rem;
+    color: var(--text-gray);
+}
+
+.div-header-dashboard-view-gallery-toggle-container {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+}
+
+.div-header-dashboard-view-gallery-toggle-container button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.8rem;
+    background-color: var(--container-white);
+    box-shadow: inset 0 0 0 0.12rem var(--stroke-light-gray);
+    border: unset;
+    border-radius: 0.8rem;
+    cursor: pointer;
+}
+
+.div-header-dashboard-view-gallery-toggle-container button ion-icon {
+    font-size: 1.6rem;
+}
+
+.div-header-dashboard-view-gallery-toggle-container button.active {
+    color: var(--text-white);
+    background-color: var(--container-black);
+    box-shadow: unset;
+}
+
+.div-header-dashboard-view-gallery-toggle-container button.active ion-icon {
+    color: var(--text-white);
+}
+
+.dashboard-view-gallery-list {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 1.6rem;
+}
+
+.dashboard-view-gallery-list-item {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    border-radius: 0.4rem;
+    overflow: hidden;
+}
+
+.div-dashboard-view-gallery-list-item-image-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    aspect-ratio: 1 / 1;
+    background-color: var(--container-light-gray);
+}
+
+.div-dashboard-view-gallery-list-item-image-container span {
+    position: absolute;
+    top: 0.8rem;
+    left: 0.8rem;
+    padding: 0.4rem 0.8rem;
+    font-size: 1.2rem;
+    background-color: var(--container-light-gray);
+    border-radius: 0.4rem;
+}
+
+.div-dashboard-view-gallery-list-item-image-container ion-icon {
+    font-size: 1.6rem;
+    color: var(--text-gray);
+}
+
+.div-dashboard-view-gallery-list-item-image-details-container {
+}
+
+.div-dashboard-view-gallery-list-item-image-timestamp-container {
+}
+
+.div-dashboard-view-gallery-list-item-image-description-container {
+}
