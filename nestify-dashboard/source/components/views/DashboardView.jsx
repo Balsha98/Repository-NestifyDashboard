@@ -2,8 +2,8 @@ import { useState } from "react";
 // IMPORTED MODULES
 import Nav from "../partials/Nav";
 import BirdBoxModal from "../partials/modals/BirdBox";
-import UploadSign from "../partials/signs/Upload";
 import UploadModal from "../partials/modals/Upload";
+import UploadSign from "../partials/signs/Upload";
 import Container from "../partials/views/dashboard/Container";
 import Gallery from "../partials/views/dashboard/Gallery";
 import Maintenance from "../partials/views/dashboard/Maintenance";
@@ -14,7 +14,7 @@ const DashboardView = function () {
     const [selectBirdBox, setSelectBirdBox] = useState(false);
     const [birdBoxData, setBirdBoxData] = useState(() => true);
     const [isUploadingData, setIsUploadingData] = useState(false);
-    const [selectedInnerView, setSelectedInnerView] = useState("overview");
+    const [selectedInnerView, setSelectedInnerView] = useState("gallery");
 
     const handleSelectBirdBox = () => setSelectBirdBox((value) => !value);
 
