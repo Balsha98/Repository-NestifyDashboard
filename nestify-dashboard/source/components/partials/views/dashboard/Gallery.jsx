@@ -3,7 +3,7 @@ import { useState } from "react";
 import "../../../../assets/css/partials/views/dashboard/gallery.css";
 
 const Gallery = function () {
-    const [galleryLayout, setGalleryLayout] = useState("list");
+    const [galleryLayout, setGalleryLayout] = useState("grid");
 
     const handleToggleGalleryLayout = (e) => setGalleryLayout(e.target.closest("button").dataset.layout);
 
