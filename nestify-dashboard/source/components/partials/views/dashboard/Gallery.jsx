@@ -3,7 +3,7 @@ import { useState } from "react";
 import "../../../../assets/css/partials/views/dashboard/gallery.css";
 
 const Gallery = function () {
-    const [galleryLayout, setGalleryLayout] = useState("grid");
+    const [galleryLayout, setGalleryLayout] = useState("list");
 
     const handleToggleGalleryLayout = (e) => setGalleryLayout(e.target.closest("button").dataset.layout);
 
@@ -23,18 +23,46 @@ const Gallery = function () {
                     </div>
                 </div>
             </header>
-            <ul className="dashboard-view-gallery-list">
-                <li className="dashboard-view-gallery-list-item">
-                    <div className="div-dashboard-view-gallery-list-item-image-container">
+            {galleryLayout === "grid" && (
+                <ul className="dashboard-view-gallery-grid-layout-list">
+                    <li className="dashboard-view-gallery-grid-layout-list-item">
+                        <div className="div-dashboard-view-gallery-grid-layout-list-item-image-container">
+                            <span>American Kestrel</span>
+                            <ion-icon src="/media/icons/icon-camera.svg"></ion-icon>
+                        </div>
+                        <div className="div-dashboard-view-gallery-grid-layout-list-item-image-details-container">
+                            <div className="div-dashboard-view-gallery-grid-layout-list-item-image-timestamp-container">
+                                <p>01/13/26</p>
+                                <p>08:00:00 am</p>
+                            </div>
+                            <div className="div-dashboard-view-gallery-grid-layout-list-item-image-description-container">
+                                <p>Perching</p>
+                                <p>95% Confidence</p>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            )}
+            {galleryLayout === "list" && (
+                <ul className="dashboard-view-gallery-list-layout-list">
+                    <li className="dashboard-view-gallery-list-layout-list-item">
                         <span>American Kestrel</span>
-                        <ion-icon src="/media/icons/icon-camera.svg"></ion-icon>
-                    </div>
-                    <div className="div-dashboard-view-gallery-list-item-image-details-container">
-                        <div className="div-dashboard-view-gallery-list-item-image-timestamp-container"></div>
-                        <div className="div-dashboard-view-gallery-list-item-image-description-container"></div>
-                    </div>
-                </li>
-            </ul>
+                        <div className="div-dashboard-view-gallery-list-layout-list-item-image-overview-container">
+                            <div className="div-dashboard-view-gallery-list-layout-list-item-image-container">
+                                <ion-icon src="/media/icons/icon-camera.svg"></ion-icon>
+                            </div>
+                            <div className="div-dashboard-view-gallery-list-layout-list-item-image-details-container">
+                                <p>01/13/26 @ 08:00:00 am</p>
+                                <div className="div-dashboard-view-gallery-list-layout-list-item-image-description-container">
+                                    <p>Perching</p>
+                                    <p>95% Confidence</p>
+                                </div>
+                            </div>
+                            <p>Size: 2.5 MB</p>
+                        </div>
+                    </li>
+                </ul>
+            )}
         </div>
     );
 };

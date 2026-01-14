@@ -1,3 +1,4 @@
+/* DASHBOARD VIEW GALLERY CONTAINER */
 .div-dashboard-view-gallery-container {
     display: flex;
     flex-direction: column;
@@ -8,6 +9,7 @@
     border-radius: 0.4rem;
 }
 
+/* HEADER DASHBOARD VIEW GALLERY CONTAINER */
 .header-dashboard-view-gallery-container {
     display: flex;
     align-items: center;
@@ -18,6 +20,7 @@
     font-size: 1.4rem;
 }
 
+/* HEADER DASHBOARD VIEW GALLERY INFO CONTAINER */
 .div-header-dashboard-view-gallery-info-container {
     display: flex;
     align-items: center;
@@ -29,6 +32,7 @@
     color: var(--text-gray);
 }
 
+/* HEADER DASHBOARD VIEW GALLERY TOGGLE CONTAINER */
 .div-header-dashboard-view-gallery-toggle-container {
     display: flex;
     align-items: center;
@@ -61,21 +65,26 @@
     color: var(--text-white);
 }
 
-.dashboard-view-gallery-list {
+/* DASHBOARD VIEW GALLERY GRID LAYOUT LIST */
+.dashboard-view-gallery-grid-layout-list {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     gap: 1.6rem;
 }
 
-.dashboard-view-gallery-list-item {
+/* DASHBOARD VIEW GALLERY GRID LAYOUT LIST ITEM */
+.dashboard-view-gallery-grid-layout-list-item {
     display: flex;
     flex-direction: column;
     width: 100%;
+    box-shadow: inset 0 0 0 0.12rem var(--stroke-light-gray);
     border-radius: 0.4rem;
     overflow: hidden;
+    cursor: pointer;
 }
 
-.div-dashboard-view-gallery-list-item-image-container {
+/* DASHBOARD VIEW GALLERY GRID LAYOUT LIST ITEM IMAGE CONTAINER */
+.div-dashboard-view-gallery-grid-layout-list-item-image-container {
     position: relative;
     display: flex;
     align-items: center;
@@ -84,7 +93,7 @@
     background-color: var(--container-light-gray);
 }
 
-.div-dashboard-view-gallery-list-item-image-container span {
+.div-dashboard-view-gallery-grid-layout-list-item-image-container span {
     position: absolute;
     top: 0.8rem;
     left: 0.8rem;
@@ -94,16 +103,136 @@
     border-radius: 0.4rem;
 }
 
-.div-dashboard-view-gallery-list-item-image-container ion-icon {
-    font-size: 1.6rem;
+.div-dashboard-view-gallery-grid-layout-list-item-image-container ion-icon {
+    font-size: 2.4rem;
     color: var(--text-gray);
 }
 
-.div-dashboard-view-gallery-list-item-image-details-container {
+/* DASHBOARD VIEW GALLERY GRID LAYOUT LIST ITEM IMAGE DETAILS CONTAINER */
+.div-dashboard-view-gallery-grid-layout-list-item-image-details-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+    padding: 0.8rem;
 }
 
-.div-dashboard-view-gallery-list-item-image-timestamp-container {
+/* DASHBOARD VIEW GALLERY GRID LAYOUT LIST ITEM IMAGE TIMESTAMP CONTAINER */
+.div-dashboard-view-gallery-grid-layout-list-item-image-timestamp-container {
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
 }
 
-.div-dashboard-view-gallery-list-item-image-description-container {
+.div-dashboard-view-gallery-grid-layout-list-item-image-timestamp-container p {
+    font-size: 1.4rem;
+}
+
+/* DASHBOARD VIEW GALLERY GRID LAYOUT LIST ITEM IMAGE DESCRIPTION CONTAINER */
+.div-dashboard-view-gallery-grid-layout-list-item-image-description-container {
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+}
+
+.div-dashboard-view-gallery-grid-layout-list-item-image-description-container p {
+    font-size: 1.2rem;
+}
+
+.div-dashboard-view-gallery-grid-layout-list-item-image-description-container p:first-child {
+    color: var(--text-gray);
+}
+
+.div-dashboard-view-gallery-grid-layout-list-item-image-description-container p:last-child {
+    color: var(--color-green);
+}
+
+/* DASHBOARD VIEW GALLERY LIST LAYOUT LIST */
+.dashboard-view-gallery-list-layout-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.6rem;
+}
+
+/* DASHBOARD VIEW GALLERY LIST LAYOUT LIST ITEM */
+.dashboard-view-gallery-list-layout-list-item {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    width: 100%;
+    padding: 1.2rem;
+    box-shadow: inset 0 0 0 0.12rem var(--stroke-light-gray);
+    border-radius: 0.4rem;
+    cursor: pointer;
+}
+
+.dashboard-view-gallery-list-layout-list-item span {
+    width: fit-content;
+    padding: 0.4rem 0.8rem;
+    font-size: 1.2rem;
+    background-color: var(--container-light-gray);
+    border-radius: 0.4rem;
+}
+
+/* DASHBOARD VIEW GALLERY LIST LAYOUT LIST ITEM IMAGE OVERVIEW CONTAINER */
+.div-dashboard-view-gallery-list-layout-list-item-image-overview-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+}
+
+/* DASHBOARD VIEW GALLERY LIST LAYOUT LIST ITEM IMAGE CONTAINER */
+.div-dashboard-view-gallery-list-layout-list-item-image-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 8rem;
+    aspect-ratio: 1 / 1;
+    background-color: var(--container-light-gray);
+    box-shadow: inset 0 0 0 0.12rem var(--stroke-gray);
+    border-radius: 0.8rem;
+}
+
+.div-dashboard-view-gallery-list-layout-list-item-image-container ion-icon {
+    font-size: 2rem;
+    color: var(--text-gray);
+}
+
+/* DASHBOARD VIEW GALLERY LIST LAYOUT LIST ITEM IMAGE DETAILS CONTAINER */
+.div-dashboard-view-gallery-list-layout-list-item-image-details-container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    padding: 0.4rem 0;
+}
+
+.div-dashboard-view-gallery-list-layout-list-item-image-details-container p {
+    margin-bottom: auto;
+    font-size: 1.4rem;
+}
+
+/* DASHBOARD VIEW GALLERY LIST LAYOUT LIST ITEM IMAGE DESCRIPTION CONTAINER */
+.div-dashboard-view-gallery-list-layout-list-item-image-description-container {
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+}
+
+.div-dashboard-view-gallery-list-layout-list-item-image-description-container p {
+    font-size: 1.2rem;
+}
+
+.div-dashboard-view-gallery-list-layout-list-item-image-description-container p:first-child {
+    color: var(--text-gray);
+}
+
+.div-dashboard-view-gallery-list-layout-list-item-image-description-container p:last-child {
+    color: var(--color-green);
+}
+
+.div-dashboard-view-gallery-list-layout-list-item-image-overview-container > p {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    font-size: 1.4rem;
 }
