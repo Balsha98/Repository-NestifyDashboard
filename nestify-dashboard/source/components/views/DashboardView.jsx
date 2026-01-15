@@ -5,6 +5,7 @@ import BirdBoxModal from "../partials/modals/BirdBox";
 import UploadModal from "../partials/modals/Upload";
 import UploadSign from "../partials/signs/Upload";
 import Container from "../partials/views/dashboard/Container";
+import Analytics from "../partials/views/dashboard/Analytics";
 import Gallery from "../partials/views/dashboard/Gallery";
 import Maintenance from "../partials/views/dashboard/Maintenance";
 import Settings from "../partials/views/dashboard/Settings";
@@ -84,6 +85,7 @@ const DashboardView = function () {
                                 selectedInnerView={selectedInnerView}
                                 onToggleInnerView={handleToggleInnerView}
                             />
+                            {selectedInnerView === "analytics" && <Analytics />}
                             {selectedInnerView === "gallery" && <Gallery />}
                             {selectedInnerView === "maintenance" && <Maintenance />}
                             {selectedInnerView === "settings" && <Settings />}
