@@ -10,7 +10,7 @@
 }
 
 .div-report-view-seasonal-history-container h4 {
-    font-size: 1.4rem;
+    font-size: 1.6rem;
 }
 
 /* REPORT VIEW SEASONAL HISTORY CHART LEGEND LIST */
@@ -27,7 +27,7 @@
 }
 
 .report-view-seasonal-history-chart-legend-list-item ion-icon {
-    font-size: 1.6rem;
+    font-size: 2rem;
 }
 
 .report-view-seasonal-history-chart-legend-list-item:nth-child(1) ion-icon {
@@ -43,5 +43,5 @@
 }
 
 .report-view-seasonal-history-chart-legend-list-item span {
-    font-size: 1.2rem;
+    font-size: 1.4rem;
 }
