@@ -21,7 +21,7 @@
     background-color: var(--brand-blue-accent);
     border: unset;
     border-radius: 0.8rem;
-    transition: all 0.3s ease-in-out;
+    /* transition: all 0.3s ease-in-out; */
     cursor: pointer;
 }
 

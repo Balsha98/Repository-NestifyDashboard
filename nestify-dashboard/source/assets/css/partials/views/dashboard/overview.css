@@ -74,7 +74,7 @@
     padding: 0.8rem 1.2rem;
     box-shadow: inset 0 0 0 0.12rem var(--stroke-light-gray);
     border-radius: 0.8rem;
-    transition: all 0.3s ease-in-out;
+    /* transition: all 0.3s ease-in-out; */
 }
 
 .div-dashboard-view-overview-location-overview-container a:hover,
@@ -175,7 +175,7 @@
     padding: 0.8rem 1.2rem;
     box-shadow: inset 0 0 0 0.12rem var(--stroke-light-gray);
     border-radius: 0.8rem;
-    transition: all 0.3s ease-in-out;
+    /* transition: all 0.3s ease-in-out; */
 }
 
 .header-dashboard-view-overview-recent-images-container a:hover,

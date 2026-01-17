@@ -41,7 +41,7 @@
     height: 0.2rem;
     background-color: var(--container-white);
     border-radius: 0.4rem;
-    transition: all 0.3s ease-in-out;
+    /* transition: all 0.3s ease-in-out; */
 }
 
 .main-nav-container-list-item:hover::after,
@@ -60,7 +60,7 @@
     box-shadow: inset 0 0 0 0.12rem var(--stroke-light-gray);
     border: unset;
     border-radius: 0.8rem;
-    transition: all 0.3s ease-in-out;
+    /* transition: all 0.3s ease-in-out; */
     cursor: pointer;
 }
 

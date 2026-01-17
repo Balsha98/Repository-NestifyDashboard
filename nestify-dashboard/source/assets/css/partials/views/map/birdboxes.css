@@ -45,7 +45,7 @@
     box-shadow: inset 0 0 0 0.12rem var(--color-green);
     border: unset;
     border-radius: 0.8rem;
-    transition: all 0.3s ease-in-out;
+    /* transition: all 0.3s ease-in-out; */
     cursor: pointer;
 }
 
@@ -74,7 +74,7 @@
     padding: 1.2rem;
     box-shadow: inset 0 0 0 0.12rem var(--stroke-light-gray);
     border-radius: 0.8rem;
-    transition: all 0.3s ease-in-out;
+    /* transition: all 0.3s ease-in-out; */
 }
 
 .map-view-birdboxes-list-item:hover {

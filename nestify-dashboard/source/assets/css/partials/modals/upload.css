@@ -57,7 +57,7 @@
     box-shadow: inset 0 0 0 0.12rem var(--container-light-gray);
     border: unset;
     border-radius: 0.8rem;
-    transition: all 0.3s ease-in-out;
+    /* transition: all 0.3s ease-in-out; */
     cursor: pointer;
 }
 
@@ -179,7 +179,7 @@
     font-size: 1.6rem;
     color: var(--text-white);
     transform: translateY(-50%);
-    transition: all 0.3s ease-in-out;
+    /* transition: all 0.3s ease-in-out; */
 }
 
 .target-box-options-list-item:hover ion-icon,
@@ -212,7 +212,7 @@
     background-color: var(--brand-blue-accent);
     border: unset;
     border-radius: 0.8rem;
-    transition: all 0.3s ease-in-out;
+    /* transition: all 0.3s ease-in-out; */
     cursor: pointer;
 }
 
