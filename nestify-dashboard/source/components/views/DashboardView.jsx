@@ -16,7 +16,7 @@ const DashboardView = function () {
     const [selectBirdBox, setSelectBirdBox] = useState(false);
     const [birdBoxData, setBirdBoxData] = useState(() => true);
     const [isUploadingData, setIsUploadingData] = useState(false);
-    const [selectedInnerView, setSelectedInnerView] = useState("overview");
+    const [selectedInnerView, setSelectedInnerView] = useState("maintenance");
 
     const handleSelectBirdBox = () => setSelectBirdBox((value) => !value);
 
