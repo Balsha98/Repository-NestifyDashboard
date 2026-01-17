@@ -108,3 +108,8 @@
     border: unset;
     border-radius: 0.8rem;
 }
+
+.disabled.div-form-dashboard-view-settings-input-container input,
+.disabled.div-form-dashboard-view-settings-input-container textarea {
+    background-color: var(--container-gray);
+}
