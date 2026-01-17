@@ -7,26 +7,26 @@ import LeafletMap from "../partials/views/map/Leaflet";
 import BirdBoxesList from "../partials/views/map/BirdBoxes";
 
 const MapView = function () {
-	const [isViewingDetails, setIsViewingDetails] = useState(false);
-	const [isAddingBox, setIsAddingBox] = useState(false);
+    const [isViewingDetails, setIsViewingDetails] = useState(false);
+    const [isAddingBox, setIsAddingBox] = useState(false);
 
-	const handleToggleDetailsModal = () => setIsViewingDetails((value) => !value);
+    const handleToggleDetailsModal = () => setIsViewingDetails((value) => !value);
 
-	const handleToggleBirdBoxModal = () => setIsAddingBox((value) => !value);
+    const handleToggleBirdBoxModal = () => setIsAddingBox((value) => !value);
 
-	return (
-		<>
-			<Nav></Nav>
-			{isViewingDetails && <DetailsModal onToggleDetailsModal={handleToggleDetailsModal} />}
-			{isAddingBox && <BirdBoxModal onToggleBirdBoxModal={handleToggleBirdBoxModal} />}
-			<div className="div-main-edge-container">
-				<div className="div-map-view-container">
-					<LeafletMap />
-					<BirdBoxesList isAddingBox={isAddingBox} onToggleBirdBoxModal={handleToggleBirdBoxModal} />
-				</div>
-			</div>
-		</>
-	);
+    return (
+        <>
+            <Nav></Nav>
+            {isViewingDetails && <DetailsModal onToggleDetailsModal={handleToggleDetailsModal} />}
+            {isAddingBox && <BirdBoxModal onToggleBirdBoxModal={handleToggleBirdBoxModal} />}
+            <div className="div-main-edge-container">
+                <div className="div-map-view-container">
+                    <LeafletMap />
+                    <BirdBoxesList isAddingBox={isAddingBox} onToggleBirdBoxModal={handleToggleBirdBoxModal} />
+                </div>
+            </div>
+        </>
+    );
 };
 
 export default MapView;

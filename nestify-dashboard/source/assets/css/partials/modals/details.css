@@ -196,13 +196,13 @@
     align-items: center;
     justify-content: center;
     aspect-ratio: 1 / 1;
-    background-color: var(--container-light);
+    background-color: var(--container-light-gray);
     border-radius: 0.8rem;
 }
 
 .details-modal-images-overview-list-item ion-icon {
     font-size: 2rem;
-    color: var(--text-gray)
+    color: var(--text-gray);
 }
 
 .div-details-modal-overview-container a:link,
