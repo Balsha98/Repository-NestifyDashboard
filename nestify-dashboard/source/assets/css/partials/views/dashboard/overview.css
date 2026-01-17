@@ -203,7 +203,8 @@
     width: 100%;
     aspect-ratio: 1 / 1;
     background-color: var(--container-light-gray);
-    border-radius: 0.4rem;
+    border-radius: 0.8rem;
+    cursor: pointer;
 }
 
 .dashboard-view-overview-recent-images-list-item ion-icon {
