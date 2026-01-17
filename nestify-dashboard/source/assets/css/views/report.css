@@ -31,6 +31,10 @@
     cursor: pointer;
 }
 
+.header-report-view-container button:hover {
+    background-color: var(--color-green-hover);
+}
+
 .header-report-view-container button ion-icon {
     font-size: 1.6rem;
     color: inherit;
