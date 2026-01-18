@@ -5,7 +5,7 @@ import "../../../../assets/css/partials/views/dashboard/maintenance.css";
 import ScheduleModal from "../../modals/Schedule";
 
 const Maintenance = function () {
-    const [isViewingSchedule, setIsViewingSchedule] = useState(true);
+    const [isViewingSchedule, setIsViewingSchedule] = useState(false);
 
     const handleToggleScheduleModal = () => setIsViewingSchedule((value) => !value);
 
@@ -16,14 +16,14 @@ const Maintenance = function () {
                 <div className="div-dashboard-view-maintenance-log-container">
                     <h2>Maintenance Log</h2>
                     <ul className="dashboard-view-maintenance-log-list">
-                        <li className="dashboard-view-maintenance-log-list-item">
+                        <li className="dashboard-view-maintenance-log-list-item" onClick={handleToggleScheduleModal}>
                             <header className="header-dashboard-view-maintenance-log-list-item">
                                 <p>Battery Replacement</p>
                                 <span>01/13/2026</span>
                             </header>
                             <span>John Doe</span>
                         </li>
-                        <li className="dashboard-view-maintenance-log-list-item">
+                        <li className="dashboard-view-maintenance-log-list-item" onClick={handleToggleScheduleModal}>
                             <header className="header-dashboard-view-maintenance-log-list-item">
                                 <p>Battery Replacement</p>
                                 <span>01/13/2026</span>

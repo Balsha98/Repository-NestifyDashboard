@@ -35,6 +35,12 @@
     padding: 1.2rem;
     box-shadow: inset 0 0 0 0.12rem var(--stroke-light-gray);
     border-radius: 0.4rem;
+    /* transition: all 0.3s ease-in-out; */
+    cursor: pointer;
+}
+
+.dashboard-view-maintenance-log-list-item:hover {
+    background-color: var(--container-light);
 }
 
 /* HEADER DASHBOARD VIEW MAINTENANCE LOG LIST ITEM */
