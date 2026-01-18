@@ -106,7 +106,7 @@ const Schedule = function ({ onToggleScheduleModal }) {
                         <label htmlFor="notes">Notes</label>
                         <textarea id="notes" name="notes" rows="4" placeholder="Additional notes..."></textarea>
                     </div>
-                    <button>
+                    <button type="button">
                         {/* <ion-icon src="/media/icons/icon-selected.svg"></ion-icon> */}
                         <span>Confirm Schedule</span>
                     </button>
