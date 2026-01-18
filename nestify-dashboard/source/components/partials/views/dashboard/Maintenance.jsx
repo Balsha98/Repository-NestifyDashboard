@@ -5,7 +5,7 @@ import "../../../../assets/css/partials/views/dashboard/maintenance.css";
 import ScheduleModal from "../../modals/Schedule";
 
 const Maintenance = function () {
-    const [isViewingSchedule, setIsViewingSchedule] = useState(false);
+    const [isViewingSchedule, setIsViewingSchedule] = useState(true);
 
     const handleToggleScheduleModal = () => setIsViewingSchedule((value) => !value);
 
