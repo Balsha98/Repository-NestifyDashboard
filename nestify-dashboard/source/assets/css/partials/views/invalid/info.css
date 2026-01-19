@@ -1,0 +1,64 @@
+/* INVALID VIEW MODAL INFO CONTAINER */
+.div-invalid-view-modal-info-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+}
+
+.div-invalid-view-modal-info-container::before {
+    content: "";
+    position: absolute;
+    top: -2.4rem;
+    width: 100%;
+    height: 0.2rem;
+    background-color: var(--container-gray);
+    border-radius: 0.4rem;
+    transform: translateY(-50%);
+}
+
+/* HEADER INVALID VIEW MODAL INFO CONTAINER */
+.header-invalid-view-modal-info-container {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+    text-align: center;
+}
+
+.header-invalid-view-modal-info-container h2 {
+    font-size: 2rem;
+}
+
+.header-invalid-view-modal-info-container p {
+    font-size: 1.4rem;
+}
+
+.div-invalid-view-modal-info-container a:link,
+.div-invalid-view-modal-info-container a:visited {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.6rem;
+    padding: 0.8rem 1.2rem;
+    color: var(--text-white);
+    background-color: var(--color-green);
+    border-radius: 0.8rem;
+    /* transition: all 0.3s ease-in-out; */
+}
+
+.div-invalid-view-modal-info-container a:hover,
+.div-invalid-view-modal-info-container a:active {
+    background-color: var(--color-green-hover);
+}
+
+.div-invalid-view-modal-info-container a:link ion-icon,
+.div-invalid-view-modal-info-container a:visited ion-icon {
+    font-size: 1.6rem;
+    color: inherit;
+}
+
+.div-invalid-view-modal-info-container a:link span,
+.div-invalid-view-modal-info-container a:visited span {
+    font-size: 1.4rem;
+    color: inherit;
+}
