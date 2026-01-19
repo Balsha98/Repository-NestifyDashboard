@@ -1,0 +1,30 @@
+/* INVALID VIEW CONTAINER */
+.div-invalid-view-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--container-light);
+}
+
+/* INVALID VIEW MODAL */
+.div-invalid-view-modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 4.8rem;
+    width: 48rem;
+    padding: 3.2rem 2.4rem;
+    background-color: var(--container-white);
+    box-shadow: 0 0.4rem 1.2rem rgba(0, 0, 0, 0.2);
+    border-radius: 0.4rem;
+    transform: translate(-50%, -50%);
+}
+
+.div-invalid-view-modal > img {
+    width: 20rem;
+    margin: 0 auto;
+}
