@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 // IMPORTED STYLESHEETS
 import "../../css/views/dashboard.css";
 // IMPORTED MODULES
@@ -27,6 +27,10 @@ const DashboardView = function () {
     const handleToggleUploadModal = () => setIsUploadingData((value) => !value);
 
     const handleToggleInnerView = (e) => setSelectedInnerView(e.target.closest("li").dataset.innerViewName);
+
+    useEffect(function () {
+        document.title = "Nestify | Dashboard";
+    }, []);
 
     return (
         <>

@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 // IMPORTED STYLESHEETS
 import "../../css/views/map.css";
 // IMPORTED MODULES
@@ -15,6 +15,10 @@ const MapView = function () {
     const handleToggleDetailsModal = () => setIsViewingDetails((value) => !value);
 
     const handleToggleBirdBoxModal = () => setIsAddingBox((value) => !value);
+
+    useEffect(function () {
+        document.title = "Nestify | Map";
+    }, []);
 
     return (
         <>
