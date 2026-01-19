@@ -5,7 +5,7 @@ const LogoFormView = function () {
                 <h2>Conservation Dashboard</h2>
                 <p>Enter your credentials to access the dashboard.</p>
             </header>
-            <form className="form-login-view-container" action="" method="POST">
+            <form className="form-login-view-modal" action="" method="POST">
                 <div className="div-form-login-input-container">
                     <label htmlFor="username">
                         <ion-icon src="/media/icons/icon-user.svg"></ion-icon>

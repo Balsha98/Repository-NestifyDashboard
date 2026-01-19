@@ -1,12 +1,15 @@
-body {
-    height: 100vh;
-    background-image: linear-gradient(to bottom right, #006938, #367e53);
-    background-attachment: fixed;
-    background-size: cover;
-}
-
 /* LOGIN VIEW CONTAINER */
 .div-login-view-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-image: linear-gradient(to bottom right, #006938, #367e53);
+}
+
+/* LOGIN VIEW MODAL */
+.div-login-view-modal {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -21,7 +24,7 @@ body {
     transform: translate(-50%, -50%);
 }
 
-.div-login-view-container > img {
+.div-login-view-modal > img {
     width: 20rem;
     margin: 0 auto;
 }
@@ -61,8 +64,8 @@ body {
     font-size: 1.2rem;
 }
 
-/* FORM LOGIN VIEW CONTAINER */
-.form-login-view-container {
+/* FORM LOGIN VIEW MODAL */
+.form-login-view-modal {
     display: flex;
     flex-direction: column;
     gap: 1.6rem;
@@ -95,7 +98,7 @@ body {
 }
 
 /* BUTTON FORM LOGIN SUBMIT */
-.form-login-view-container button {
+.form-login-view-modal button {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -110,16 +113,16 @@ body {
     cursor: pointer;
 }
 
-.form-login-view-container button:hover {
+.form-login-view-modal button:hover {
     background-color: var(--color-green-hover);
 }
 
-.form-login-view-container button ion-icon {
+.form-login-view-modal button ion-icon {
     font-size: 1.6rem;
 }
 
-.form-login-view-container button ion-icon,
-.form-login-view-container button span {
+.form-login-view-modal button ion-icon,
+.form-login-view-modal button span {
     color: inherit;
 }
 
