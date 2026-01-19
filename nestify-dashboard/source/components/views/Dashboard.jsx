@@ -1,4 +1,6 @@
 import { useState } from "react";
+// IMPORTED STYLESHEETS
+import "../../assets/css/views/dashboard.css";
 // IMPORTED MODULES
 import Nav from "../partials/Nav";
 import BirdBoxModal from "../partials/modals/BirdBox";

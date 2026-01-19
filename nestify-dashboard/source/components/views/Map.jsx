@@ -1,4 +1,6 @@
 import { useState } from "react";
+// IMPORTED STYLESHEETS
+import "../../assets/css/views/map.css";
 // IMPORTED MODULES
 import Nav from "../partials/Nav";
 import DetailsModal from "../partials/modals/Details";
