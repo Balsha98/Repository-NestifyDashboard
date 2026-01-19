@@ -8,7 +8,7 @@ import BirdBoxModal from "../partials/modals/BirdBox";
 import LeafletMap from "../partials/views/map/Leaflet";
 import BirdBoxesList from "../partials/views/map/BirdBoxes";
 
-const MapView = function () {
+const Map = function () {
     const [isViewingDetails, setIsViewingDetails] = useState(false);
     const [isAddingBox, setIsAddingBox] = useState(false);
 
@@ -35,4 +35,4 @@ const MapView = function () {
     );
 };
 
-export default MapView;
+export default Map;

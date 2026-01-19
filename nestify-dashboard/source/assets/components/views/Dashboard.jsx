@@ -13,7 +13,7 @@ import Gallery from "../partials/views/dashboard/Gallery";
 import Maintenance from "../partials/views/dashboard/Maintenance";
 import Settings from "../partials/views/dashboard/Settings";
 
-const DashboardView = function () {
+const Dashboard = function () {
     const [isAddingBox, setIsAddingBox] = useState(false);
     const [selectBirdBox, setSelectBirdBox] = useState(false);
     const [birdBoxData, setBirdBoxData] = useState(() => true);
@@ -105,4 +105,4 @@ const DashboardView = function () {
     );
 };
 
-export default DashboardView;
+export default Dashboard;

@@ -6,7 +6,7 @@ import Logo from "../partials/Logo";
 import LoginForm from "../partials/views/auth/LoginForm";
 import Copyright from "../partials/views/auth/Copyright";
 
-const LoginView = function () {
+const Login = function () {
     useEffect(function () {
         document.title = "Nestify | Login";
     }, []);
@@ -15,13 +15,13 @@ const LoginView = function () {
         <>
             <div className="div-login-view-container">
                 <div className="div-login-view-modal">
-                    <Logo></Logo>
-                    <LoginForm></LoginForm>
+                    <Logo />
+                    <LoginForm />
                 </div>
-                <Copyright></Copyright>
+                <Copyright />
             </div>
         </>
     );
 };
 
-export default LoginView;
+export default Login;

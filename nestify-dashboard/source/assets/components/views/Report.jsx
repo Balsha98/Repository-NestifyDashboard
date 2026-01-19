@@ -7,7 +7,7 @@ import SpeciesOverview from "../partials/views/report/SpeciesOverview";
 import SeasonalHistory from "../partials/views/report/SeasonalHistory";
 import { useEffect } from "react";
 
-const ReportView = function () {
+const Report = function () {
     useEffect(function () {
         document.title = "Nestify | Report";
     }, []);
@@ -35,4 +35,4 @@ const ReportView = function () {
     );
 };
 
-export default ReportView;
+export default Report;
