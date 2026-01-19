@@ -12,13 +12,14 @@ const Container = function ({ isUploadingData, onToggleUploadModal, selectedInne
                         const lowerCasedName = innerViewName.toLowerCase();
 
                         return (
-                            <li
-                                key={i}
-                                className={`dashboard-view-general-toggle-list-item ${selectedInnerView === lowerCasedName ? "active" : ""}`}
-                                onClick={onToggleInnerView}
-                                data-inner-view-name={lowerCasedName}
-                            >
-                                <span>{innerViewName}</span>
+                            <li key={i} className="dashboard-view-general-toggle-list-item">
+                                <button
+                                    className={`${selectedInnerView === lowerCasedName ? "active" : ""}`}
+                                    onClick={onToggleInnerView}
+                                    data-inner-view-name={lowerCasedName}
+                                >
+                                    <span>{innerViewName}</span>
+                                </button>
                             </li>
                         );
                     })}

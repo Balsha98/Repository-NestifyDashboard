@@ -23,19 +23,21 @@
 }
 
 /* DASHBOARD VIEW GENERAL TOGGLE LIST ITEM */
-.dashboard-view-general-toggle-list-item {
+.dashboard-view-general-toggle-list-item button {
     padding: 0.8rem 1.6rem;
+    background-color: var(--container-gray);
+    border: unset;
     border-radius: 24rem;
     /* transition: all 0.3s ease-in-out; */
     cursor: pointer;
 }
 
-.dashboard-view-general-toggle-list-item:hover,
-.active.dashboard-view-general-toggle-list-item {
+.dashboard-view-general-toggle-list-item button:hover,
+.dashboard-view-general-toggle-list-item button.active {
     background-color: var(--container-white);
 }
 
-.dashboard-view-general-toggle-list-item span {
+.dashboard-view-general-toggle-list-item button span {
     font-size: 1.4rem;
 }
 

@@ -170,21 +170,21 @@
     font-size: 1.6rem;
 }
 
-.header-dashboard-view-overview-recent-images-container a:link,
-.header-dashboard-view-overview-recent-images-container a:visited {
+.header-dashboard-view-overview-recent-images-container button {
     padding: 0.8rem 1.2rem;
+    background-color: var(--container-white);
     box-shadow: inset 0 0 0 0.12rem var(--stroke-light-gray);
+    border: unset;
     border-radius: 0.8rem;
     /* transition: all 0.3s ease-in-out; */
+    cursor: pointer;
 }
 
-.header-dashboard-view-overview-recent-images-container a:hover,
-.header-dashboard-view-overview-recent-images-container a:active {
+.header-dashboard-view-overview-recent-images-container button:hover {
     background-color: var(--container-light);
 }
 
-.header-dashboard-view-overview-recent-images-container a:link span,
-.header-dashboard-view-overview-recent-images-container a:visited span {
+.header-dashboard-view-overview-recent-images-container button span {
     font-size: 1.4rem;
 }
 

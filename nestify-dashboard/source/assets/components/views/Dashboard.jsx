@@ -26,7 +26,7 @@ const DashboardView = function () {
 
     const handleToggleUploadModal = () => setIsUploadingData((value) => !value);
 
-    const handleToggleInnerView = (e) => setSelectedInnerView(e.target.closest("li").dataset.innerViewName);
+    const handleToggleInnerView = (e) => setSelectedInnerView(e.target.closest("button").dataset.innerViewName);
 
     useEffect(function () {
         document.title = "Nestify | Dashboard";
@@ -92,7 +92,7 @@ const DashboardView = function () {
                                 selectedInnerView={selectedInnerView}
                                 onToggleInnerView={handleToggleInnerView}
                             />
-                            {selectedInnerView === "overview" && <Overview />}
+                            {selectedInnerView === "overview" && <Overview onToggleInnerView={handleToggleInnerView} />}
                             {selectedInnerView === "analytics" && <Analytics />}
                             {selectedInnerView === "gallery" && <Gallery />}
                             {selectedInnerView === "maintenance" && <Maintenance />}

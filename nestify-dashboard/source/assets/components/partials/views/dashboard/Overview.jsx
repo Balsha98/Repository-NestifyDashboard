@@ -4,7 +4,7 @@ import "../../../../css/partials/views/dashboard/overview.css";
 // IMPORTED MODULES
 import ImageModal from "../../modals/Image";
 
-const Overview = function () {
+const Overview = function ({ onToggleInnerView }) {
     const [isViewingImage, setIsViewingImage] = useState(false);
 
     const handleToggleImageModal = () => setIsViewingImage((value) => !value);
@@ -27,7 +27,7 @@ const Overview = function () {
                                 <p>42.8584, -78.7342</p>
                             </li>
                         </ul>
-                        <a href="#">
+                        <a href="/map">
                             <ion-icon src="/media/icons/icon-location.svg"></ion-icon>
                             <span>View on Map</span>
                         </a>
@@ -67,9 +67,9 @@ const Overview = function () {
                             <ion-icon src="/media/icons/icon-camera.svg"></ion-icon>
                             <h4>Recent Images</h4>
                         </div>
-                        <a href="#">
+                        <button onClick={onToggleInnerView} data-inner-view-name="gallery">
                             <span>View All</span>
-                        </a>
+                        </button>
                     </header>
                     <ul className="dashboard-view-overview-recent-images-list">
                         <li className="dashboard-view-overview-recent-images-list-item" onClick={handleToggleImageModal}>
