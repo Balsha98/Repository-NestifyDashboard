@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { NavLink } from "react-router-dom";
 // IMPORTED MODULES
 import Logo from "./Logo";
 import Logout from "./modals/Logout";
@@ -17,17 +18,25 @@ const Nav = function () {
             {isLoggingOut && <Logout onToggleLogoutModal={handleToggleLogoutModal}></Logout>}
             <div className="div-main-nav-container">
                 <div className="div-main-edge-container">
-                    <Logo />
+                    <a href="/dashboard">
+                        <Logo />
+                    </a>
                     <nav className="main-nav-container">
                         <ul className="main-nav-container-list">
-                            <li className="main-nav-container-list-item active">
-                                <a href="/dashboard">Dashboard</a>
+                            <li className="main-nav-container-list-item">
+                                <NavLink to="/dashboard" className={({ isActive }) => (isActive ? "active" : "")}>
+                                    <span>Dashboard</span>
+                                </NavLink>
                             </li>
                             <li className="main-nav-container-list-item">
-                                <a href="/report">Report</a>
+                                <NavLink to="/report" className={({ isActive }) => (isActive ? "active" : "")}>
+                                    <span>Report</span>
+                                </NavLink>
                             </li>
                             <li className="main-nav-container-list-item">
-                                <a href="/map">Map</a>
+                                <NavLink to="/map" className={({ isActive }) => (isActive ? "active" : "")}>
+                                    <span>Map</span>
+                                </NavLink>
                             </li>
                         </ul>
                         <button className={`${isLoggingOut ? "active" : ""}`} onClick={handleToggleLogoutModal}>
