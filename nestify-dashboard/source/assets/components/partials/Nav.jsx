@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { Activity, useState } from "react";
 import { NavLink } from "react-router-dom";
 // IMPORTED MODULES
 import Logo from "./Logo";
@@ -9,13 +9,13 @@ import "../../css/partials/nav.css";
 const Nav = function () {
     const [isLoggingOut, setIsLoggingOut] = useState(false);
 
-    const handleToggleLogoutModal = function () {
-        setIsLoggingOut((value) => !value);
-    };
+    const handleToggleLogoutModal = () => setIsLoggingOut((value) => !value);
 
     return (
         <>
-            {isLoggingOut && <Logout onToggleLogoutModal={handleToggleLogoutModal}></Logout>}
+            <Activity mode={isLoggingOut ? "visible" : "hidden"}>
+                <Logout onToggleLogoutModal={handleToggleLogoutModal} />
+            </Activity>
             <div className="div-main-nav-container">
                 <div className="div-main-edge-container">
                     <a href="/dashboard">
@@ -40,7 +40,7 @@ const Nav = function () {
                             </li>
                         </ul>
                         <button className={`${isLoggingOut ? "active" : ""}`} onClick={handleToggleLogoutModal}>
-                            <ion-icon src="/media/icons/icon-sign-out.svg"></ion-icon>
+                            <ion-icon src="/media/icons/icon-sign-out.svg" />
                             <span>Logout</span>
                         </button>
                     </nav>
