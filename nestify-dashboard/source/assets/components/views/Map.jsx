@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { Activity, useEffect, useState } from "react";
 // IMPORTED STYLESHEETS
 import "../../css/views/map.css";
 // IMPORTED MODULES
@@ -22,9 +22,13 @@ const Map = function () {
 
     return (
         <>
-            <Nav></Nav>
-            {isViewingDetails && <DetailsModal onToggleDetailsModal={handleToggleDetailsModal} />}
-            {isAddingBox && <BirdBoxModal onToggleBirdBoxModal={handleToggleBirdBoxModal} />}
+            <Nav />
+            <Activity mode={isViewingDetails ? "visible" : "hidden"}>
+                <DetailsModal onToggleDetailsModal={handleToggleDetailsModal} />
+            </Activity>
+            <Activity mode={isAddingBox ? "visible" : "hidden"}>
+                <BirdBoxModal onToggleBirdBoxModal={handleToggleBirdBoxModal} />
+            </Activity>
             <div className="div-main-edge-container">
                 <div className="div-map-view-container">
                     <LeafletMap />
