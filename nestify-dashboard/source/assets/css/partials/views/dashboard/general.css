@@ -8,7 +8,7 @@
 /* HEADER DASHBOARD VIEW GENERAL CONTAINER */
 .header-dashboard-view-general-container {
     display: flex;
-    align-items: baseline;
+    align-items: center;
     justify-content: space-between;
 }
 

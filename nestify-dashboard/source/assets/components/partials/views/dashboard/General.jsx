@@ -1,5 +1,5 @@
 // IMPORTED STYLESHEETS
-import "../../../../css/partials/views/dashboard/container.css";
+import "../../../../css/partials/views/dashboard/general.css";
 
 const General = function ({ isUploadingData, onToggleUploadModal, selectedInnerView, onToggleInnerView }) {
     const innerViewNames = ["Overview", "Analytics", "Gallery", "Maintenance", "Settings"];
