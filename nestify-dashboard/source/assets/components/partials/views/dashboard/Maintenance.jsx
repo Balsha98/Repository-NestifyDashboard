@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { Activity, useState } from "react";
 // IMPORTED STYLESHEETS
 import "../../../../css/partials/views/dashboard/maintenance.css";
 // IMPORTED MODULES
@@ -11,7 +11,9 @@ const Maintenance = function () {
 
     return (
         <>
-            {isViewingSchedule && <ScheduleModal onToggleScheduleModal={handleToggleScheduleModal} />}
+            <Activity mode={isViewingSchedule ? "visible" : "hidden"}>
+                <ScheduleModal onToggleScheduleModal={handleToggleScheduleModal} />
+            </Activity>
             <div className="div-dashboard-view-maintenance-container">
                 <div className="div-dashboard-view-maintenance-log-container">
                     <h2>Maintenance Log</h2>
