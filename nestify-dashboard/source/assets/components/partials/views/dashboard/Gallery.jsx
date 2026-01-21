@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { Activity, useState } from "react";
 // IMPORTED STYLESHEETS
 import "../../../../css/partials/views/dashboard/gallery.css";
 // IMPORTED MODULES
@@ -14,7 +14,9 @@ const Gallery = function () {
 
     return (
         <>
-            {isViewingImage && <ImageModal onToggleImageModal={handleToggleImageModal} />}
+            <Activity mode={isViewingImage ? "visible" : "hidden"}>
+                <ImageModal onToggleImageModal={handleToggleImageModal} />
+            </Activity>
             <div className="div-dashboard-view-gallery-container">
                 <header className="header-dashboard-view-gallery-container">
                     <h2>Collected Images</h2>
