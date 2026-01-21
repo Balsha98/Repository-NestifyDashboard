@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { Activity, useEffect, useState } from "react";
 // IMPORTED STYLESHEETS
 import "../../css/views/dashboard.css";
 // IMPORTED MODULES
@@ -34,9 +34,13 @@ const Dashboard = function () {
 
     return (
         <>
-            <Nav></Nav>
-            {isAddingBox && <BirdBoxModal onToggleBirdBoxModal={handleToggleBirdBoxModal}></BirdBoxModal>}
-            {isUploadingData && <UploadModal onToggleUploadModal={handleToggleUploadModal}></UploadModal>}
+            <Nav />
+            <Activity mode={isAddingBox ? "visible" : "hidden"}>
+                <BirdBoxModal onToggleBirdBoxModal={handleToggleBirdBoxModal} />
+            </Activity>
+            <Activity mode={isUploadingData ? "visible" : "hidden"}>
+                <UploadModal onToggleUploadModal={handleToggleUploadModal} />
+            </Activity>
             <div className="div-main-edge-container">
                 <div className="div-dashboard-view-container">
                     <header className="header-dashboard-view-container">
@@ -83,22 +87,32 @@ const Dashboard = function () {
                             </button>
                         </div>
                     </header>
-                    {birdBoxData || <UploadSign isUploadingData={isUploadingData} onToggleUploadModal={handleToggleUploadModal} />}
-                    {birdBoxData && (
-                        <>
-                            <Container
-                                isUploadingData={isUploadingData}
-                                onToggleUploadModal={handleToggleUploadModal}
-                                selectedInnerView={selectedInnerView}
-                                onToggleInnerView={handleToggleInnerView}
-                            />
-                            {selectedInnerView === "overview" && <Overview onToggleInnerView={handleToggleInnerView} />}
-                            {selectedInnerView === "analytics" && <Analytics />}
-                            {selectedInnerView === "gallery" && <Gallery />}
-                            {selectedInnerView === "maintenance" && <Maintenance />}
-                            {selectedInnerView === "settings" && <Settings />}
-                        </>
-                    )}
+                    <Activity mode={birdBoxData ? "hidden" : "visible"}>
+                        <UploadSign isUploadingData={isUploadingData} onToggleUploadModal={handleToggleUploadModal} />
+                    </Activity>
+                    <Activity mode={birdBoxData ? "visible" : "hidden"}>
+                        <Container
+                            isUploadingData={isUploadingData}
+                            onToggleUploadModal={handleToggleUploadModal}
+                            selectedInnerView={selectedInnerView}
+                            onToggleInnerView={handleToggleInnerView}
+                        />
+                        <Activity mode={selectedInnerView === "overview" ? "visible" : "hidden"}>
+                            <Overview onToggleInnerView={handleToggleInnerView} />
+                        </Activity>
+                        <Activity mode={selectedInnerView === "analytics" ? "visible" : "hidden"}>
+                            <Analytics />
+                        </Activity>
+                        <Activity mode={selectedInnerView === "gallery" ? "visible" : "hidden"}>
+                            <Gallery />
+                        </Activity>
+                        <Activity mode={selectedInnerView === "maintenance" ? "visible" : "hidden"}>
+                            <Maintenance />
+                        </Activity>
+                        <Activity mode={selectedInnerView === "settings" ? "visible" : "hidden"}>
+                            <Settings />
+                        </Activity>
+                    </Activity>
                 </div>
             </div>
         </>
