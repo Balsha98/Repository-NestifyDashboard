@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { Activity, useState } from "react";
 // IMPORTED STYLESHEETS
 import "../../../../css/partials/views/dashboard/overview.css";
 // IMPORTED MODULES
@@ -11,7 +11,9 @@ const Overview = function ({ onToggleInnerView }) {
 
     return (
         <>
-            {isViewingImage && <ImageModal onToggleImageModal={handleToggleImageModal} />}
+            <Activity mode={isViewingImage ? "visible" : "hidden"}>
+                <ImageModal onToggleImageModal={handleToggleImageModal} />
+            </Activity>
             <div className="div-dashboard-view-overview-container">
                 <div className="div-dashboard-view-overview-statistics-container">
                     <div className="div-dashboard-view-overview-location-overview-container">
