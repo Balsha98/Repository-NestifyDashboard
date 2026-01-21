@@ -6,7 +6,7 @@ import Nav from "../partials/Nav";
 import BirdBoxModal from "../partials/modals/BirdBox";
 import UploadModal from "../partials/modals/Upload";
 import UploadSign from "../partials/signs/Upload";
-import Container from "../partials/views/dashboard/Container";
+import General from "../partials/views/dashboard/General";
 import Overview from "../partials/views/dashboard/Overview";
 import Analytics from "../partials/views/dashboard/Analytics";
 import Gallery from "../partials/views/dashboard/Gallery";
@@ -91,7 +91,7 @@ const Dashboard = function () {
                         <UploadSign isUploadingData={isUploadingData} onToggleUploadModal={handleToggleUploadModal} />
                     </Activity>
                     <Activity mode={birdBoxData ? "visible" : "hidden"}>
-                        <Container
+                        <General
                             isUploadingData={isUploadingData}
                             onToggleUploadModal={handleToggleUploadModal}
                             selectedInnerView={selectedInnerView}

@@ -1,7 +1,7 @@
 // IMPORTED STYLESHEETS
 import "../../../../css/partials/views/dashboard/container.css";
 
-const Container = function ({ isUploadingData, onToggleUploadModal, selectedInnerView, onToggleInnerView }) {
+const General = function ({ isUploadingData, onToggleUploadModal, selectedInnerView, onToggleInnerView }) {
     const innerViewNames = ["Overview", "Analytics", "Gallery", "Maintenance", "Settings"];
 
     return (
@@ -39,4 +39,4 @@ const Container = function ({ isUploadingData, onToggleUploadModal, selectedInne
     );
 };
 
-export default Container;
+export default General;
