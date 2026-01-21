@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { Activity, useState } from "react";
 // IMPORTED STYLESHEETS
 import "../../../css/partials/modals/schedule.css";
 
@@ -96,12 +96,12 @@ const Schedule = function ({ onToggleScheduleModal }) {
                         </button>
                         <p>Set as recurring maintenance?</p>
                     </div>
-                    {isRecurringTask && (
+                    <Activity mode={isRecurringTask ? "visible" : "hidden"}>
                         <div className="div-form-schedule-input-container">
                             <label htmlFor="recurring-days">Recurring Every (Days)</label>
                             <input id="recurring-days" type="text" name="recurring-days" placeholder="30" />
                         </div>
-                    )}
+                    </Activity>
                     <div className="div-form-schedule-input-container">
                         <label htmlFor="notes">Notes</label>
                         <textarea id="notes" name="notes" rows="4" placeholder="Additional notes..."></textarea>
