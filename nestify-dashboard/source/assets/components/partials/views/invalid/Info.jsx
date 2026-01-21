@@ -9,7 +9,7 @@ const Info = function () {
                 <p>The page you requested unfortunately does not exist.</p>
             </header>
             <a href="/dashboard">
-                <ion-icon src="/media/icons/icon-sign-in.svg"></ion-icon>
+                <ion-icon src="/media/icons/icon-sign-in.svg" />
                 <span>Back to Dashboard</span>
             </a>
         </div>

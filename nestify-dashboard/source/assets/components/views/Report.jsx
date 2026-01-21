@@ -20,7 +20,7 @@ const Report = function () {
                     <header className="header-report-view-container">
                         <h2>Conservation Report</h2>
                         <button>
-                            <ion-icon src="/media/icons/icon-file.svg"></ion-icon>
+                            <ion-icon src="/media/icons/icon-file.svg" />
                             <span>Generate Report</span>
                         </button>
                     </header>

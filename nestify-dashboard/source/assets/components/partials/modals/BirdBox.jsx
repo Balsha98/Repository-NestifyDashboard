@@ -7,11 +7,11 @@ const BirdBox = function ({ onToggleBirdBoxModal }) {
             <div className="div-birdbox-modal">
                 <header className="header-birdbox-modal">
                     <div className="div-header-birdbox-modal-info-container">
-                        <ion-icon src="/media/icons/icon-plus.svg"></ion-icon>
+                        <ion-icon src="/media/icons/icon-plus.svg" />
                         <h2>Add BirdBox</h2>
                     </div>
                     <button onClick={onToggleBirdBoxModal}>
-                        <ion-icon src="/media/icons/icon-close.svg"></ion-icon>
+                        <ion-icon src="/media/icons/icon-close.svg" />
                     </button>
                 </header>
                 <form className="form-birdbox-modal" action="" method="POST">
@@ -34,7 +34,7 @@ const BirdBox = function ({ onToggleBirdBoxModal }) {
                         </div>
                     </div>
                     <button type="button">
-                        <ion-icon src="/media/icons/icon-selected.svg"></ion-icon>
+                        <ion-icon src="/media/icons/icon-selected.svg" />
                         <span>Add BirdBox</span>
                     </button>
                 </form>

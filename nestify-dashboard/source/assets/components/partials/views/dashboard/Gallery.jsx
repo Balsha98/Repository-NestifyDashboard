@@ -24,10 +24,10 @@ const Gallery = function () {
                         <span>6 Images</span>
                         <div className="div-header-dashboard-view-gallery-toggle-container">
                             <button className={`${galleryLayout === "grid" ? "active" : ""}`} onClick={handleToggleGalleryLayout} data-layout="grid">
-                                <ion-icon src="/media/icons/icon-grid.svg"></ion-icon>
+                                <ion-icon src="/media/icons/icon-grid.svg" />
                             </button>
                             <button className={`${galleryLayout === "list" ? "active" : ""}`} onClick={handleToggleGalleryLayout} data-layout="list">
-                                <ion-icon src="/media/icons/icon-list.svg"></ion-icon>
+                                <ion-icon src="/media/icons/icon-list.svg" />
                             </button>
                         </div>
                     </div>
@@ -37,7 +37,7 @@ const Gallery = function () {
                         <li className="dashboard-view-gallery-grid-layout-list-item" onClick={handleToggleImageModal}>
                             <div className="div-dashboard-view-gallery-grid-layout-list-item-image-container">
                                 <span>American Kestrel</span>
-                                <ion-icon src="/media/icons/icon-camera.svg"></ion-icon>
+                                <ion-icon src="/media/icons/icon-camera.svg" />
                             </div>
                             <div className="div-dashboard-view-gallery-grid-layout-list-item-image-details-container">
                                 <div className="div-dashboard-view-gallery-grid-layout-list-item-image-timestamp-container">
@@ -58,7 +58,7 @@ const Gallery = function () {
                             <span>American Kestrel</span>
                             <div className="div-dashboard-view-gallery-list-layout-list-item-image-overview-container">
                                 <div className="div-dashboard-view-gallery-list-layout-list-item-image-container">
-                                    <ion-icon src="/media/icons/icon-camera.svg"></ion-icon>
+                                    <ion-icon src="/media/icons/icon-camera.svg" />
                                 </div>
                                 <div className="div-dashboard-view-gallery-list-layout-list-item-image-details-container">
                                     <p>01/13/26 @ 08:00:00 am</p>

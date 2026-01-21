@@ -52,38 +52,38 @@ const Dashboard = function () {
                             <div className="div-birdbox-select-container">
                                 <div className="div-selected-birdbox-info-container" onClick={handleSelectBirdBox}>
                                     <div className="div-selected-birdbox-name-container">
-                                        <ion-icon src="/media/icons/icon-dot.svg"></ion-icon>
+                                        <ion-icon src="/media/icons/icon-dot.svg" />
                                         <p>Box 1 - Cornwall Preserve</p>
                                     </div>
-                                    <ion-icon src="/media/icons/icon-chevron-down.svg"></ion-icon>
+                                    <ion-icon src="/media/icons/icon-chevron-down.svg" />
                                 </div>
                                 {selectBirdBox && (
                                     <ul className="birdbox-options-list">
                                         <li className="birdbox-options-list-item active">
                                             <span>Box 1 - Cornwall Preserve</span>
-                                            <ion-icon src="/media/icons/icon-selected.svg"></ion-icon>
+                                            <ion-icon src="/media/icons/icon-selected.svg" />
                                         </li>
                                         <li className="birdbox-options-list-item">
                                             <span>Box 2 - Deer Creek Woods East</span>
-                                            <ion-icon src="/media/icons/icon-selected.svg"></ion-icon>
+                                            <ion-icon src="/media/icons/icon-selected.svg" />
                                         </li>
                                         <li className="birdbox-options-list-item">
                                             <span>Box 3 - Deer Creek Woods West</span>
-                                            <ion-icon src="/media/icons/icon-selected.svg"></ion-icon>
+                                            <ion-icon src="/media/icons/icon-selected.svg" />
                                         </li>
                                         <li className="birdbox-options-list-item">
                                             <span>Box 4 - Ganargua Creek Meadow Preserve</span>
-                                            <ion-icon src="/media/icons/icon-selected.svg"></ion-icon>
+                                            <ion-icon src="/media/icons/icon-selected.svg" />
                                         </li>
                                         <li className="birdbox-options-list-item">
                                             <span>Box 5 - Irene Gossin Nature Preserve</span>
-                                            <ion-icon src="/media/icons/icon-selected.svg"></ion-icon>
+                                            <ion-icon src="/media/icons/icon-selected.svg" />
                                         </li>
                                     </ul>
                                 )}
                             </div>
                             <button className={`${isAddingBox ? "active" : ""}`} onClick={handleToggleBirdBoxModal}>
-                                <ion-icon src="/media/icons/icon-plus.svg"></ion-icon>
+                                <ion-icon src="/media/icons/icon-plus.svg" />
                             </button>
                         </div>
                     </header>

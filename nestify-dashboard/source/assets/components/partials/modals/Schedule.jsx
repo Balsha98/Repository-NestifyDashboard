@@ -21,11 +21,11 @@ const Schedule = function ({ onToggleScheduleModal }) {
             <div className="div-schedule-modal">
                 <header className="header-schedule-modal">
                     <div className="div-header-schedule-modal-info-container">
-                        <ion-icon src="/media/icons/icon-date.svg"></ion-icon>
+                        <ion-icon src="/media/icons/icon-date.svg" />
                         <h2>Schedule Maintenance</h2>
                     </div>
                     <button onClick={onToggleScheduleModal}>
-                        <ion-icon src="/media/icons/icon-close.svg"></ion-icon>
+                        <ion-icon src="/media/icons/icon-close.svg" />
                     </button>
                 </header>
                 <form className="form-schedule-modal" action="" method="">
@@ -44,13 +44,13 @@ const Schedule = function ({ onToggleScheduleModal }) {
                         <div className="div-maintenance-type-select-container">
                             <div className="div-selected-maintenance-type-info-container" onClick={handleSelectMaintenanceType}>
                                 <p id="maintenance-type">Choose a Type</p>
-                                <ion-icon src="/media/icons/icon-chevron-down.svg"></ion-icon>
+                                <ion-icon src="/media/icons/icon-chevron-down.svg" />
                             </div>
                             {selectMaintenanceType && (
                                 <ul className="maintenance-type-options-list">
                                     <li className="maintenance-type-options-list-item active">
                                         <span>Choose a Type</span>
-                                        <ion-icon src="/media/icons/icon-selected.svg"></ion-icon>
+                                        <ion-icon src="/media/icons/icon-selected.svg" />
                                     </li>
                                 </ul>
                             )}
@@ -61,13 +61,13 @@ const Schedule = function ({ onToggleScheduleModal }) {
                         <div className="div-assigned-technician-select-container">
                             <div className="div-selected-assigned-technician-info-container" onClick={handleSelectAssignedTechnician}>
                                 <p id="assigned-technician">Choose a Technician</p>
-                                <ion-icon src="/media/icons/icon-chevron-down.svg"></ion-icon>
+                                <ion-icon src="/media/icons/icon-chevron-down.svg" />
                             </div>
                             {selectAssignedTechnician && (
                                 <ul className="assigned-technician-options-list">
                                     <li className="assigned-technician-options-list-item active">
                                         <span>Choose a Technician</span>
-                                        <ion-icon src="/media/icons/icon-selected.svg"></ion-icon>
+                                        <ion-icon src="/media/icons/icon-selected.svg" />
                                     </li>
                                 </ul>
                             )}
@@ -78,13 +78,13 @@ const Schedule = function ({ onToggleScheduleModal }) {
                         <div className="div-priority-level-select-container">
                             <div className="div-selected-priority-level-info-container" onClick={handleSelectPriorityLevel}>
                                 <p id="priority-level">Choose a Priority</p>
-                                <ion-icon src="/media/icons/icon-chevron-down.svg"></ion-icon>
+                                <ion-icon src="/media/icons/icon-chevron-down.svg" />
                             </div>
                             {selectPriorityLevel && (
                                 <ul className="priority-level-options-list">
                                     <li className="priority-level-options-list-item active">
                                         <span>Choose a Priority</span>
-                                        <ion-icon src="/media/icons/icon-selected.svg"></ion-icon>
+                                        <ion-icon src="/media/icons/icon-selected.svg" />
                                     </li>
                                 </ul>
                             )}
@@ -92,7 +92,7 @@ const Schedule = function ({ onToggleScheduleModal }) {
                     </div>
                     <div className="div-form-schedule-radio-container">
                         <button className={`${isRecurringTask ? "active" : ""}`} onClick={handleToggleRecurringTask} type="button">
-                            <ion-icon src="/media/icons/icon-dot.svg"></ion-icon>
+                            <ion-icon src="/media/icons/icon-dot.svg" />
                         </button>
                         <p>Set as recurring maintenance?</p>
                     </div>
@@ -107,7 +107,7 @@ const Schedule = function ({ onToggleScheduleModal }) {
                         <textarea id="notes" name="notes" rows="4" placeholder="Additional notes..."></textarea>
                     </div>
                     <button type="button">
-                        {/* <ion-icon src="/media/icons/icon-selected.svg"></ion-icon> */}
+                        {/* <ion-icon src="/media/icons/icon-selected.svg" /> */}
                         <span>Confirm Schedule</span>
                     </button>
                 </form>

@@ -26,11 +26,11 @@ const Container = function ({ isUploadingData, onToggleUploadModal, selectedInne
                 </ul>
                 <div className="div-dashboard-view-general-actions-container">
                     <button>
-                        <ion-icon src="/media/icons/icon-download.svg"></ion-icon>
+                        <ion-icon src="/media/icons/icon-download.svg" />
                         <span>Export Data</span>
                     </button>
                     <button className={`${isUploadingData ? "active" : ""}`} onClick={onToggleUploadModal}>
-                        <ion-icon src="/media/icons/icon-upload.svg"></ion-icon>
+                        <ion-icon src="/media/icons/icon-upload.svg" />
                         <span>Upload Data</span>
                     </button>
                 </div>

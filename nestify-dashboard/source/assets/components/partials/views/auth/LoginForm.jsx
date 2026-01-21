@@ -11,18 +11,18 @@ const LogoFormView = function () {
             <form className="form-login-view-modal" action="" method="POST">
                 <div className="div-form-login-input-container">
                     <label htmlFor="username">
-                        <ion-icon src="/media/icons/icon-user.svg"></ion-icon>
+                        <ion-icon src="/media/icons/icon-user.svg" />
                     </label>
                     <input id="username" type="text" name="username" autoComplete="true" placeholder="Enter your username..." />
                 </div>
                 <div className="div-form-login-input-container">
                     <label htmlFor="password">
-                        <ion-icon src="/media/icons/icon-password.svg"></ion-icon>
+                        <ion-icon src="/media/icons/icon-password.svg" />
                     </label>
                     <input id="password" type="password" name="password" placeholder="Enter your password..." />
                 </div>
                 <button type="button">
-                    <ion-icon src="/media/icons/icon-sign-in.svg"></ion-icon>
+                    <ion-icon src="/media/icons/icon-sign-in.svg" />
                     <span>Sign In</span>
                 </button>
             </form>

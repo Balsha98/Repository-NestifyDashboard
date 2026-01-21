@@ -6,7 +6,7 @@ const Upload = function ({ isUploadingData, onToggleUploadModal }) {
         <div className="div-upload-sign-container">
             <p>No data to display. Upload data to view information.</p>
             <button className={`${isUploadingData ? "active" : ""}`} onClick={onToggleUploadModal}>
-                <ion-icon src="/media/icons/icon-upload.svg"></ion-icon>
+                <ion-icon src="/media/icons/icon-upload.svg" />
                 <span>Upload Data</span>
             </button>
         </div>

@@ -13,21 +13,21 @@ const Analytics = function () {
                     <ul className="dashboard-view-analytics-species-list">
                         <li className="dashboard-view-analytics-species-list-item">
                             <div className="div-dashboard-view-analytics-species-list-item-info-container">
-                                <ion-icon src="/media/icons/icon-dot.svg"></ion-icon>
+                                <ion-icon src="/media/icons/icon-dot.svg" />
                                 <span>American Kestrel</span>
                             </div>
                             <span>Target</span>
                         </li>
                         <li className="dashboard-view-analytics-species-list-item">
                             <div className="div-dashboard-view-analytics-species-list-item-info-container">
-                                <ion-icon src="/media/icons/icon-dot.svg"></ion-icon>
+                                <ion-icon src="/media/icons/icon-dot.svg" />
                                 <span>Brown Bat</span>
                             </div>
                             <span>Target</span>
                         </li>
                         <li className="dashboard-view-analytics-species-list-item">
                             <div className="div-dashboard-view-analytics-species-list-item-info-container">
-                                <ion-icon src="/media/icons/icon-dot.svg"></ion-icon>
+                                <ion-icon src="/media/icons/icon-dot.svg" />
                                 <span>Other</span>
                             </div>
                             <span>Non-Target</span>

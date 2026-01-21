@@ -34,7 +34,7 @@ const Maintenance = function () {
                         </li>
                     </ul>
                     <button>
-                        <ion-icon src="/media/icons/icon-file.svg"></ion-icon>
+                        <ion-icon src="/media/icons/icon-file.svg" />
                         <span>View Full Log</span>
                     </button>
                 </div>
@@ -47,7 +47,7 @@ const Maintenance = function () {
                         </li>
                     </ul>
                     <button onClick={handleToggleScheduleModal}>
-                        <ion-icon src="/media/icons/icon-settings.svg"></ion-icon>
+                        <ion-icon src="/media/icons/icon-settings.svg" />
                         <span>Schedule Maintenance</span>
                     </button>
                 </div>

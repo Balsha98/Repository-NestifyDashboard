@@ -7,18 +7,18 @@ const Details = function ({ onToggleDetailsModal }) {
             <div className="div-details-modal">
                 <header className="header-details-modal">
                     <div className="div-header-details-modal-info-container">
-                        <ion-icon src="/media/icons/icon-plus.svg"></ion-icon>
+                        <ion-icon src="/media/icons/icon-plus.svg" />
                         <h2>BirdBox 1 - Cornwall Preserve</h2>
                     </div>
                     <button onClick={onToggleDetailsModal}>
-                        <ion-icon src="/media/icons/icon-close.svg"></ion-icon>
+                        <ion-icon src="/media/icons/icon-close.svg" />
                     </button>
                 </header>
                 <div className="div-details-modal-overview-container">
                     <div className="div-details-modal-battery-overview-container">
                         <header className="header-details-modal-battery-overview-container">
                             <div className="div-header-details-modal-battery-overview-info-container">
-                                <ion-icon src="/media/icons/icon-battery.svg"></ion-icon>
+                                <ion-icon src="/media/icons/icon-battery.svg" />
                                 <h4>Battery</h4>
                             </div>
                             <span>80%</span>
@@ -39,23 +39,23 @@ const Details = function ({ onToggleDetailsModal }) {
                     </div>
                     <div className="div-details-modal-images-overview-container">
                         <header className="header-details-modal-images-overview-container">
-                            <ion-icon src="/media/icons/icon-camera.svg"></ion-icon>
+                            <ion-icon src="/media/icons/icon-camera.svg" />
                             <h4>Recent Images</h4>
                         </header>
                         <ul className="details-modal-images-overview-list">
                             <li className="details-modal-images-overview-list-item">
-                                <ion-icon src="/media/icons/icon-camera.svg"></ion-icon>
+                                <ion-icon src="/media/icons/icon-camera.svg" />
                             </li>
                             <li className="details-modal-images-overview-list-item">
-                                <ion-icon src="/media/icons/icon-camera.svg"></ion-icon>
+                                <ion-icon src="/media/icons/icon-camera.svg" />
                             </li>
                             <li className="details-modal-images-overview-list-item">
-                                <ion-icon src="/media/icons/icon-camera.svg"></ion-icon>
+                                <ion-icon src="/media/icons/icon-camera.svg" />
                             </li>
                         </ul>
                     </div>
                     <a href="#">
-                        {/* <ion-icon src=""></ion-icon> */}
+                        {/* <ion-icon src="" /> */}
                         <span>View Full Details</span>
                     </a>
                 </div>

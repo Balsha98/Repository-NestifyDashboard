@@ -18,7 +18,7 @@ const Overview = function ({ onToggleInnerView }) {
                 <div className="div-dashboard-view-overview-statistics-container">
                     <div className="div-dashboard-view-overview-location-overview-container">
                         <header className="header-dashboard-view-overview-location-overview-container">
-                            <ion-icon src="/media/icons/icon-location.svg"></ion-icon>
+                            <ion-icon src="/media/icons/icon-location.svg" />
                             <h4>Location</h4>
                         </header>
                         <ul className="dashboard-view-overview-location-overview-list">
@@ -30,13 +30,13 @@ const Overview = function ({ onToggleInnerView }) {
                             </li>
                         </ul>
                         <a href="/map">
-                            <ion-icon src="/media/icons/icon-location.svg"></ion-icon>
+                            <ion-icon src="/media/icons/icon-location.svg" />
                             <span>View on Map</span>
                         </a>
                     </div>
                     <div className="div-dashboard-view-overview-statistics-overview-container">
                         <header className="header-dashboard-view-overview-statistics-overview-container">
-                            <ion-icon src="/media/icons/icon-chart.svg"></ion-icon>
+                            <ion-icon src="/media/icons/icon-chart.svg" />
                             <h4>Statistics</h4>
                         </header>
                         <ul className="dashboard-view-overview-statistics-overview-list">
@@ -52,7 +52,7 @@ const Overview = function ({ onToggleInnerView }) {
                     </div>
                     <div className="div-dashboard-view-overview-battery-overview-container">
                         <header className="header-dashboard-view-overview-battery-overview-container">
-                            <ion-icon src="/media/icons/icon-battery.svg"></ion-icon>
+                            <ion-icon src="/media/icons/icon-battery.svg" />
                             <h4>Battery</h4>
                         </header>
                         <div className="div-dashboard-view-overview-battery-overview-info-container">
@@ -66,7 +66,7 @@ const Overview = function ({ onToggleInnerView }) {
                 <div className="div-dashboard-view-overview-recent-images-container">
                     <header className="header-dashboard-view-overview-recent-images-container">
                         <div className="div-header-dashboard-view-overview-recent-images-info-container">
-                            <ion-icon src="/media/icons/icon-camera.svg"></ion-icon>
+                            <ion-icon src="/media/icons/icon-camera.svg" />
                             <h4>Recent Images</h4>
                         </div>
                         <button onClick={onToggleInnerView} data-inner-view-name="gallery">
@@ -75,7 +75,7 @@ const Overview = function ({ onToggleInnerView }) {
                     </header>
                     <ul className="dashboard-view-overview-recent-images-list">
                         <li className="dashboard-view-overview-recent-images-list-item" onClick={handleToggleImageModal}>
-                            <ion-icon src="/media/icons/icon-camera.svg"></ion-icon>
+                            <ion-icon src="/media/icons/icon-camera.svg" />
                         </li>
                     </ul>
                 </div>

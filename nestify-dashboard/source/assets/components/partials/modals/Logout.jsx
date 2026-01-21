@@ -6,7 +6,7 @@ const Logout = function ({ onToggleLogoutModal }) {
         <div className="div-logout-modal-container">
 			<div className="div-logout-modal">
 				<header className="header-logout-modal">
-					<ion-icon src="/media/icons/icon-sign-out.svg"></ion-icon>
+					<ion-icon src="/media/icons/icon-sign-out.svg" />
 					<h2>Logout?</h2>
 				</header>
 				<div className="div-logout-modal-info-container">
@@ -15,11 +15,11 @@ const Logout = function ({ onToggleLogoutModal }) {
 				</div>
                 <footer className="footer-logout-modal">
                     <button onClick={onToggleLogoutModal}>
-                        <ion-icon src="/media/icons/icon-close.svg"></ion-icon>
+                        <ion-icon src="/media/icons/icon-close.svg" />
                         <span>Cancel</span>
                     </button>
                     <a href="/logout">
-                        <ion-icon src="/media/icons/icon-sign-out.svg"></ion-icon>
+                        <ion-icon src="/media/icons/icon-sign-out.svg" />
                         <span>Logout</span>
                     </a>
                 </footer>

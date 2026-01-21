@@ -8,15 +8,15 @@ const SeasonalHistory = function () {
             <div className="div-report-view-seasonal-history-chart-overview-container">
                 <ul className="report-view-seasonal-history-chart-legend-list">
                     <li className="report-view-seasonal-history-chart-legend-list-item">
-                        <ion-icon src="/media/icons/icon-dot.svg"></ion-icon>
+                        <ion-icon src="/media/icons/icon-dot.svg" />
                         <span>American Kestrel</span>
                     </li>
                     <li className="report-view-seasonal-history-chart-legend-list-item">
-                        <ion-icon src="/media/icons/icon-dot.svg"></ion-icon>
+                        <ion-icon src="/media/icons/icon-dot.svg" />
                         <span>Brown Bat</span>
                     </li>
                     <li className="report-view-seasonal-history-chart-legend-list-item">
-                        <ion-icon src="/media/icons/icon-dot.svg"></ion-icon>
+                        <ion-icon src="/media/icons/icon-dot.svg" />
                         <span>Total</span>
                     </li>
                 </ul>

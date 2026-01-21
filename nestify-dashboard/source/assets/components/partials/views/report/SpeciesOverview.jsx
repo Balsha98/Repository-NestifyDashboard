@@ -6,7 +6,7 @@ const SpeciesOverview = function () {
         <div className="div-report-view-species-overview-container">
             <div className="div-report-view-specie-overview-container">
                 <header className="header-report-view-specie-overview-container">
-                    <ion-icon src="/media/icons/icon-check.svg"></ion-icon>
+                    <ion-icon src="/media/icons/icon-check.svg" />
                     <h4>Target Species</h4>
                 </header>
                 <ul className="report-view-specie-overview-list">
@@ -22,7 +22,7 @@ const SpeciesOverview = function () {
             </div>
             <div className="div-report-view-specie-overview-container">
                 <header className="header-report-view-specie-overview-container">
-                    <ion-icon src="/media/icons/icon-warning.svg"></ion-icon>
+                    <ion-icon src="/media/icons/icon-warning.svg" />
                     <h4>Non-Target Species</h4>
                 </header>
                 <ul className="report-view-specie-overview-list">
@@ -34,7 +34,7 @@ const SpeciesOverview = function () {
             </div>
             <div className="div-report-view-specie-overview-container">
                 <header className="header-report-view-specie-overview-container">
-                    <ion-icon src="/media/icons/icon-bird.svg"></ion-icon>
+                    <ion-icon src="/media/icons/icon-bird.svg" />
                     <h4>American Kestrel Analysis</h4>
                 </header>
                 <ul className="report-view-specie-overview-list">
@@ -58,7 +58,7 @@ const SpeciesOverview = function () {
             </div>
             <div className="div-report-view-specie-overview-container">
                 <header className="header-report-view-specie-overview-container">
-                    <ion-icon src="/media/icons/icon-bat.svg"></ion-icon>
+                    <ion-icon src="/media/icons/icon-bat.svg" />
                     <h4>Brown Bat Analysis</h4>
                 </header>
                 <ul className="report-view-specie-overview-list">

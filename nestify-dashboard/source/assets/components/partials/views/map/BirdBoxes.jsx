@@ -6,11 +6,11 @@ const BirdBoxes = function ({ isAddingBox, onToggleBirdBoxModal }) {
         <div className="div-map-view-birdboxes-list-container">
             <header className="header-map-view-birdboxes-list-container">
                 <div className="div-header-map-view-birdboxes-list-info-container">
-                    <ion-icon src="/media/icons/icon-bird-house.svg"></ion-icon>
+                    <ion-icon src="/media/icons/icon-bird-house.svg" />
                     <h2>BirdBoxes</h2>
                 </div>
                 <button className={`${isAddingBox ? "active" : ""}`} onClick={onToggleBirdBoxModal}>
-                    <ion-icon src="/media/icons/icon-plus.svg"></ion-icon>
+                    <ion-icon src="/media/icons/icon-plus.svg" />
                 </button>
             </header>
             <ul className="map-view-birdboxes-list">

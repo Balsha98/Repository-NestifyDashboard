@@ -14,18 +14,18 @@ const Settings = function () {
                 <div className="div-header-dashboard-view-settings-edit-container">
                     {isDisabled && (
                         <button onClick={handleSetIsDisabled}>
-                            <ion-icon src="/media/icons/icon-edit.svg"></ion-icon>
+                            <ion-icon src="/media/icons/icon-edit.svg" />
                             <span>Edit Box</span>
                         </button>
                     )}
                     {isDisabled || (
                         <div className="div-header-dashboard-view-settings-editable-container">
                             <button onClick={handleSetIsDisabled}>
-                                <ion-icon src="/media/icons/icon-close.svg"></ion-icon>
+                                <ion-icon src="/media/icons/icon-close.svg" />
                                 <span>Close</span>
                             </button>
                             <button>
-                                <ion-icon src="/media/icons/icon-save.svg"></ion-icon>
+                                <ion-icon src="/media/icons/icon-save.svg" />
                                 <span>Save Changes</span>
                             </button>
                         </div>

@@ -7,21 +7,21 @@ const Image = function ({ onToggleImageModal }) {
             <div className="div-image-details-modal">
                 <header className="header-image-details-modal">
                     <div className="div-header-image-details-modal-info-container">
-                        <ion-icon src="/media/icons/icon-camera.svg"></ion-icon>
+                        <ion-icon src="/media/icons/icon-camera.svg" />
                         <h2>Image Details</h2>
                     </div>
                     <button onClick={onToggleImageModal}>
-                        <ion-icon src="/media/icons/icon-close.svg"></ion-icon>
+                        <ion-icon src="/media/icons/icon-close.svg" />
                     </button>
                 </header>
                 <div className="div-image-details-modal-overview-container">
                     <div className="div-image-details-modal-image-overview-container">
                         <div className="div-image-details-modal-image-placeholder-container">
                             <span>American Kestrel</span>
-                            <ion-icon src="/media/icons/icon-camera.svg"></ion-icon>
+                            <ion-icon src="/media/icons/icon-camera.svg" />
                         </div>
                         <button>
-                            <ion-icon src="/media/icons/icon-download.svg"></ion-icon>
+                            <ion-icon src="/media/icons/icon-download.svg" />
                             <span>Download</span>
                         </button>
                     </div>
