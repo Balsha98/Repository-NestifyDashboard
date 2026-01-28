@@ -1,6 +1,7 @@
 import { Activity, useState } from "react";
 // IMPORTED STYLESHEETS
 import "../../../../css/partials/views/dashboard/overview.css";
+import "../../../../css/responsive/partials/views/dashboard/overview.css";
 // IMPORTED MODULES
 import ImageModal from "../../modals/Image";
 
