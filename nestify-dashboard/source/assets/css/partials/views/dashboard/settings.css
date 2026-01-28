@@ -83,7 +83,7 @@
 .div-form-dashboard-view-settings-multi-input-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    column-gap: 1.6rem;
+    gap: 1.6rem;
 }
 
 /* FORM DASHBOARD VIEW SETTINGS INPUT CONTAINER */

@@ -1,6 +1,7 @@
 import { useState } from "react";
 // IMPORTED STYLESHEETS
 import "../../../../css/partials/views/dashboard/settings.css";
+import "../../../../css/responsive/partials/views/dashboard/settings.css";
 
 const Settings = function () {
     const [isDisabled, setIsDisabled] = useState(true);
