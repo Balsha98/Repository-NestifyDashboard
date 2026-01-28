@@ -2,7 +2,7 @@
 .div-dashboard-view-maintenance-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    column-gap: 2.4rem;
+    gap: 2.4rem;
 }
 
 /* DASHBOARD VIEW MAINTENANCE LOG CONTAINER */

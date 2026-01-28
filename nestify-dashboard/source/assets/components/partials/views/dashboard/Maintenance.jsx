@@ -1,6 +1,7 @@
 import { Activity, useState } from "react";
 // IMPORTED STYLESHEETS
 import "../../../../css/partials/views/dashboard/maintenance.css";
+import "../../../../css/responsive/partials/views/dashboard/maintenance.css";
 // IMPORTED MODULES
 import ScheduleModal from "../../modals/Schedule";
 
