@@ -9,8 +9,11 @@ import "../../css/responsive/partials/nav.css";
 
 const Nav = function () {
 	const [isLoggingOut, setIsLoggingOut] = useState(false);
+	const [isViewingNav, setIsViewingNav] = useState(false);
 
 	const handleToggleLogoutModal = () => setIsLoggingOut((value) => !value);
+
+	const handleToggleMobileNav = () => setIsViewingNav((value) => !value);
 
 	return (
 		<>
@@ -22,7 +25,7 @@ const Nav = function () {
 					<a href="/dashboard">
 						<Logo />
 					</a>
-					<nav className="main-nav-container">
+					<nav className={`main-nav-container ${isViewingNav ? "active" : ""}`}>
 						<ul className="main-nav-container-list">
 							<li className="main-nav-container-list-item">
 								<NavLink to="/dashboard" className={({ isActive }) => (isActive ? "active" : "")}>
@@ -45,7 +48,7 @@ const Nav = function () {
 							<span>Logout</span>
 						</button>
 					</nav>
-					<button>
+					<button onClick={handleToggleMobileNav}>
 						<ion-icon src="/media/icons/icon-menu.svg"></ion-icon>
 					</button>
 				</div>

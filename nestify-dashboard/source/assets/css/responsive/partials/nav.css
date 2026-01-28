@@ -20,6 +20,7 @@
         position: absolute;
         top: 6.4rem;
         left: 0;
+        display: none;
         flex-direction: column;
         gap: 1.2rem;
         width: 100%;
@@ -27,6 +28,10 @@
         background-color: var(--container-white);
         box-shadow: 0 0.2rem 0.4rem rgba(0, 0, 0, 0.12);
         z-index: 9998;
+    }
+
+    .active.main-nav-container {
+        display: flex;
     }
 
     /* MAIN NAV CONTAINER LIST */
