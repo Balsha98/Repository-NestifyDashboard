@@ -1,5 +1,6 @@
 // IMPORTED STYLESHEETS
 import "../../../../css/partials/views/dashboard/analytics.css";
+import "../../../../css/responsive/partials/views/dashboard/analytics.css";
 
 const Analytics = function () {
     return (

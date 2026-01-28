@@ -14,7 +14,6 @@
 
 /* DASHBOARD VIEW ANALYTICS TRENDS CONTAINER */
 .div-dashboard-view-analytics-trends-container {
-    flex-grow: 1;
     display: flex;
     flex-direction: column;
     gap: 2.4rem;
@@ -30,7 +29,6 @@
 
 /* DASHBOARD VIEW ANALYTICS SPECIES CONTAINER */
 .div-dashboard-view-analytics-species-container {
-    flex-grow: 1;
     display: flex;
     flex-direction: column;
     gap: 2.4rem;
