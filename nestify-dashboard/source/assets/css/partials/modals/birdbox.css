@@ -80,7 +80,7 @@
 .div-form-birdbox-multi-input-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    column-gap: 1.6rem;
+    gap: 1.6rem;
 }
 
 /* FORM BIRDBOX INPUT CONTAINER */

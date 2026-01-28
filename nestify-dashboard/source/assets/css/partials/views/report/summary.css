@@ -17,7 +17,7 @@
 .report-view-summary-list {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    column-gap: 1.6rem;
+    gap: 1.6rem;
 }
 
 /* REPORT VIEW SUMMARY LIST ITEM */

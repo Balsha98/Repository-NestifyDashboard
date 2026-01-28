@@ -73,7 +73,7 @@
 .div-image-details-modal-overview-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    column-gap: 2.4rem;
+    gap: 2.4rem;
 }
 
 /* IMAGE DETAILS MODAL OVERVIEW IMAGE OVERVIEW CONTAINER */
