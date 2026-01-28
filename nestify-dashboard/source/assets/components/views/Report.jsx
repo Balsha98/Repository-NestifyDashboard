@@ -1,5 +1,6 @@
 // IMPORTED STYLESHEETS
 import "../../css/views/report.css";
+import "../../css/responsive/views/report.css";
 // IMPORTED MODULES
 import Nav from "../partials/Nav";
 import Summary from "../partials/views/report/Summary";
