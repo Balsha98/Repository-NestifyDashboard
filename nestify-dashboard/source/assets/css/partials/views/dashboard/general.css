@@ -1,10 +1,3 @@
-/* DASHBOARD VIEW GENERAL CONTAINER */
-.div-dashboard-view-general-container {
-    display: flex;
-    flex-direction: column;
-    gap: 2.4rem;
-}
-
 /* HEADER DASHBOARD VIEW GENERAL CONTAINER */
 .header-dashboard-view-general-container {
     display: flex;
