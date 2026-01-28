@@ -1,5 +1,6 @@
 // IMPORTED STYLESHEETS
 import "../../../../css/partials/views/report/summary.css";
+import "../../../../css/responsive/partials/views/report/summary.css";
 
 const Summary = function () {
     return (

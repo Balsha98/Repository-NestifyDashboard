@@ -1,5 +1,6 @@
 // IMPORTED STYLESHEETS
 import "../../../../css/partials/views/report/species-overview.css";
+import "../../../../css/responsive/partials/views/report/species-overview.css";
 
 const SpeciesOverview = function () {
     return (
