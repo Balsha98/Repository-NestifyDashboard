@@ -1,0 +1,29 @@
+/* NOTIFICATION MODAL CONTAINER */
+.div-notification-modal-container {
+    position: fixed;
+    bottom: 3.2rem;
+    right: 3.2rem;
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    padding: 1.2rem 1.6rem;
+    background-color: var(--container-white);
+    box-shadow: 0 0.2rem 0.4rem rgba(0, 0, 0, 0.1);
+    border-radius: 0.8rem;
+}
+
+.div-notification-modal-container ion-icon {
+    font-size: 1.6rem;
+}
+
+.success.div-notification-modal-container ion-icon {
+    color: var(--color-green);
+}
+
+.failure.div-notification-modal-container ion-icon {
+    color: var(--color-red);
+}
+
+.div-notification-modal-container p {
+    font-size: 1.4rem;
+}
