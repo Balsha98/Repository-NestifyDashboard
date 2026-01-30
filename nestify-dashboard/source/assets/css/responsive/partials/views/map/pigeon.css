@@ -1,14 +1,13 @@
 @media (max-width: 576px) {
     /* MAP VIEW LEAFLET CONTAINER */
-    .div-map-view-leaflet-container {
+    .div-map-view-pigeon-container {
         width: 100%;
-        min-height: auto;
         height: calc(100vh - 6.4rem);
         box-shadow: unset;
         border-radius: 0;
     }
 
-    .div-map-view-leaflet-container button {
+    .div-map-view-pigeon-container button {
         display: flex;
     }
 }
