@@ -1,20 +1,13 @@
 /* INVALID VIEW MODAL INFO CONTAINER */
 .div-invalid-view-modal-info-container {
-    position: relative;
     display: flex;
     flex-direction: column;
-    gap: 1.6rem;
+    align-items: center;
 }
 
-.div-invalid-view-modal-info-container::before {
-    content: "";
-    position: absolute;
-    top: -2.4rem;
-    width: 100%;
-    height: 0.2rem;
-    background-color: var(--container-gray);
-    border-radius: 0.4rem;
-    transform: translateY(-50%);
+.div-invalid-view-modal-info-container h1 {
+    font-size: 32rem;
+    color: var(--brand-blue-core);
 }
 
 /* HEADER INVALID VIEW MODAL INFO CONTAINER */
@@ -22,6 +15,7 @@
     display: flex;
     flex-direction: column;
     gap: 0.4rem;
+    margin-top: -2.4rem;
     text-align: center;
 }
 
@@ -39,6 +33,7 @@
     align-items: center;
     justify-content: center;
     gap: 0.6rem;
+    margin-top: 1.6rem;
     padding: 0.8rem 1.2rem;
     color: var(--text-white);
     background-color: var(--color-green);
