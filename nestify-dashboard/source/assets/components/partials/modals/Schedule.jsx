@@ -1,6 +1,7 @@
 import { Activity, useState } from "react";
 // IMPORTED STYLESHEETS
 import "../../../css/partials/modals/schedule.css";
+import "../../../css/responsive/partials/modals/schedule.css";
 
 const Schedule = function ({ onToggleScheduleModal }) {
     const [selectMaintenanceType, setSelectMaintenanceType] = useState(false);
