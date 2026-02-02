@@ -1,7 +1,7 @@
 // IMPORTED STYLESHEETS
 import "../../../../css/partials/views/auth/login-form.css";
 
-const LogoFormView = function () {
+const LoginForm = function () {
     return (
         <div className="div-login-view-form-container">
             <header className="header-login-view-form-container">
@@ -26,8 +26,13 @@ const LogoFormView = function () {
                     <span>Sign In</span>
                 </button>
             </form>
+            <footer className="footer-login-view-form-container">
+                <p>
+                    Don't have an account? <a href="/signup">Create an Account</a>.
+                </p>
+            </footer>
         </div>
     );
 };
 
-export default LogoFormView;
+export default LoginForm;

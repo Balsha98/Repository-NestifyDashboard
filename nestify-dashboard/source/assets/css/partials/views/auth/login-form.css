@@ -1,3 +1,38 @@
+/* LOGIN VIEW FORM CONTAINER */
+.div-login-view-form-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+}
+
+.div-login-view-form-container::before {
+    content: "";
+    position: absolute;
+    top: -2.4rem;
+    width: 100%;
+    height: 0.2rem;
+    background-color: var(--container-gray);
+    border-radius: 0.4rem;
+    transform: translateY(-50%);
+}
+
+/* HEADER LOGIN VIEW FORM CONTAINER */
+.header-login-view-form-container {
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+    text-align: center;
+}
+
+.header-login-view-form-container h2 {
+    font-size: 1.8rem;
+}
+
+.header-login-view-form-container p {
+    font-size: 1.2rem;
+}
+
 /* FORM LOGIN VIEW MODAL */
 .form-login-view-modal {
     display: flex;
@@ -25,6 +60,7 @@
 
 .div-form-login-input-container input {
     width: 100%;
+    font-size: 1.4rem;
     padding: 0.8rem 0.8rem 0.8rem 4rem;
     background-color: var(--container-light-gray);
     border: unset;
@@ -58,4 +94,25 @@
 .form-login-view-modal button span {
     font-size: 1.4rem;
     color: inherit;
+}
+
+/* FOOTER LOGIN VIEW FORM CONTAINER */
+.footer-login-view-form-container {
+    margin-top: 0.8rem;
+    text-align: center;
+}
+
+.footer-login-view-form-container p {
+    font-size: 1.2rem;
+}
+
+.footer-login-view-form-container p a:link,
+.footer-login-view-form-container p a:visited {
+    color: var(--color-green);
+    /* transition: all 0.3s ease-in-out; */
+}
+
+.footer-login-view-form-container p a:hover,
+.footer-login-view-form-container p a:active {
+    color: var(--color-green-hover);
 }
