@@ -1,5 +1,6 @@
 // IMPORTED STYLESHEETS
 import "../../../css/partials/modals/birdbox.css";
+import "../../../css/responsive/partials/modals/birdbox.css";
 
 const BirdBox = function ({ onToggleBirdBoxModal }) {
     return (
