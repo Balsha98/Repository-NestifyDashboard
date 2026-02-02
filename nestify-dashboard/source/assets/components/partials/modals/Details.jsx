@@ -1,5 +1,6 @@
 // IMPORTED STYLESHEETS
 import "../../../css/partials/modals/details.css";
+import "../../../css/responsive/partials/modals/details.css";
 
 const Details = function ({ onToggleDetailsModal }) {
     return (
