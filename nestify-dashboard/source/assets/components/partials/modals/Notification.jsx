@@ -6,7 +6,7 @@ const Notification = function () {
     return (
         <div className="div-notification-modal-container">
             <div className="div-notification-modal success">
-                <ion-icon src="/media/icons/icon-notification.svg"></ion-icon>
+                <ion-icon src="/media/icons/icon-check.svg"></ion-icon>
                 <p>Notification message goes here.</p>
             </div>
         </div>
