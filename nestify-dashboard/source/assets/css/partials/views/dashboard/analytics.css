@@ -104,6 +104,8 @@
 /* DASHBOARD VIEW ANALYTICS PATTERN CONTAINER */
 .div-dashboard-view-analytics-pattern-container {
     display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
     padding: 1.6rem;
     background-color: var(--container-white);
     box-shadow: inset 0 0 0 0.12rem var(--stroke-light-gray);
