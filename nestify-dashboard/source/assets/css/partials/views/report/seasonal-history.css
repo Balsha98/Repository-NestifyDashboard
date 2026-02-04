@@ -13,6 +13,13 @@
     font-size: 1.6rem;
 }
 
+/* REPORT VIEW SEASONAL HISTORY CHART OVERVIEW CONTAINER */
+.div-report-view-seasonal-history-chart-overview-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+}
+
 /* REPORT VIEW SEASONAL HISTORY CHART LEGEND LIST */
 .report-view-seasonal-history-chart-legend-list {
     display: flex;
