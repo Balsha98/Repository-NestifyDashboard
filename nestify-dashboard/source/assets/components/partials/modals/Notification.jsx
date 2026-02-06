@@ -4,7 +4,7 @@ import "../../../css/responsive/partials/modals/notification.css";
 
 const Notification = function () {
     return (
-        <div className="div-notification-modal-container">
+        <div className="div-notification-modal-container active">
             <div className="div-notification-modal success">
                 <ion-icon src="/media/icons/icon-check.svg"></ion-icon>
                 <p>Notification message goes here.</p>

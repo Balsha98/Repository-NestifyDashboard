@@ -9,4 +9,8 @@
         padding: 0 1.6rem;
         transform: translateX(-50%);
     }
+
+    .active.div-notification-modal-container {
+        top: -6.4rem;
+    }
 }
