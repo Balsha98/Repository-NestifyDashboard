@@ -3,9 +3,10 @@ import { Activity, useEffect, useState } from "react";
 import "../../css/views/dashboard.css";
 import "../../css/responsive/views/dashboard.css";
 // IMPORTED MODULES
-import Nav from "../partials/Nav";
+import PageLoader from "../partials/loaders/Page";
 import BirdBoxModal from "../partials/modals/BirdBox";
 import UploadModal from "../partials/modals/Upload";
+import Nav from "../partials/Nav";
 import UploadSign from "../partials/signs/Upload";
 import General from "../partials/views/dashboard/General";
 import Overview from "../partials/views/dashboard/Overview";
@@ -16,6 +17,7 @@ import Settings from "../partials/views/dashboard/Settings";
 import NotificationModal from "../partials/modals/Notification";
 
 const Dashboard = function () {
+    const [isViewLoading, setIsViewLoading] = useState(true);
     const [isAddingBox, setIsAddingBox] = useState(false);
     const [selectBirdBox, setSelectBirdBox] = useState(false);
     const [birdBoxData, setBirdBoxData] = useState(() => true);
@@ -32,17 +34,22 @@ const Dashboard = function () {
 
     useEffect(function () {
         document.title = "Nestify | Dashboard";
+
+        const loadingTimer = setTimeout(() => setIsViewLoading(false), 800);
+
+        return () => clearTimeout(loadingTimer);
     }, []);
 
     return (
         <>
-            <Nav />
+            <PageLoader isViewLoading={isViewLoading} />
             <Activity mode={isAddingBox ? "visible" : "hidden"}>
                 <BirdBoxModal onToggleBirdBoxModal={handleToggleBirdBoxModal} />
             </Activity>
             <Activity mode={isUploadingData ? "visible" : "hidden"}>
                 <UploadModal onToggleUploadModal={handleToggleUploadModal} />
             </Activity>
+            <Nav />
             <div className="div-main-edge-container">
                 <div className="div-dashboard-view-container">
                     <header className="header-dashboard-view-container">

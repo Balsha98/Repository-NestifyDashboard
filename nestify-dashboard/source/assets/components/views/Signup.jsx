@@ -8,30 +8,28 @@ import Copyright from "../partials/views/auth/Copyright";
 import PageLoader from "../partials/loaders/Page";
 
 const Signup = function () {
-	const [isViewLoading, setIsViewLoading] = useState(true);
+    const [isViewLoading, setIsViewLoading] = useState(true);
 
-	useEffect(function () {
-		document.title = "Nestify | Signup";
+    useEffect(function () {
+        document.title = "Nestify | Signup";
 
-		const loadingTimer = setTimeout(() => {
-			setIsViewLoading(false);
-		}, 800);
+        const loadingTimer = setTimeout(() => setIsViewLoading(false), 800);
 
-		return () => clearTimeout(loadingTimer);
-	}, []);
+        return () => clearTimeout(loadingTimer);
+    }, []);
 
-	return (
-		<>
-			<PageLoader isViewLoading={isViewLoading} />
-			<div className="div-signup-view-container">
-				<div className="div-signup-view-modal">
-					<Logo />
-					<SignupForm />
-				</div>
-				<Copyright />
-			</div>
-		</>
-	);
+    return (
+        <>
+            <PageLoader isViewLoading={isViewLoading} />
+            <div className="div-signup-view-container">
+                <div className="div-signup-view-modal">
+                    <Logo />
+                    <SignupForm />
+                </div>
+                <Copyright />
+            </div>
+        </>
+    );
 };
 
 export default Signup;
