@@ -15,7 +15,7 @@ const Login = function () {
 
 		const loadingTimer = setTimeout(() => {
 			setIsViewLoading(false);
-		}, 2000);
+		}, 800);
 
 		return () => clearTimeout(loadingTimer);
 	}, []);
