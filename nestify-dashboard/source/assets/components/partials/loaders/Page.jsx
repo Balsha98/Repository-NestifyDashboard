@@ -7,7 +7,7 @@ const Page = function ({ isViewLoading }) {
 			<div className="div-page-loader-modal">
 				<div className="div-outer-spinning-container">
 					<div className="div-inner-spinning-container">
-						<ion-icon src="/media/icons/icon-logo.svg"></ion-icon>
+						<ion-icon src="/media/icons/icon-logo.svg" />
 					</div>
 				</div>
 				<header className="header-page-loader-modal">

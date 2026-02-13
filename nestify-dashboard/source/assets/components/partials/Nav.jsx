@@ -42,6 +42,11 @@ const Nav = function () {
 									<span>Map</span>
 								</NavLink>
 							</li>
+							<li className="main-nav-container-list-item">
+								<NavLink to="/profile" className={({ isActive }) => (isActive ? "active" : "")}>
+									<span>Profile</span>
+								</NavLink>
+							</li>
 						</ul>
 						<button className={`${isLoggingOut ? "active" : ""}`} onClick={handleToggleLogoutModal}>
 							<ion-icon src="/media/icons/icon-sign-out.svg" />
@@ -49,7 +54,7 @@ const Nav = function () {
 						</button>
 					</nav>
 					<button onClick={handleToggleMobileNav}>
-						<ion-icon src="/media/icons/icon-menu.svg"></ion-icon>
+						<ion-icon src="/media/icons/icon-menu.svg" />
 					</button>
 				</div>
 			</div>
