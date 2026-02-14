@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 // IMPORTED STYLESHEETS
 import "../../css/views/profile.css";
+import "../../css/responsive/views/profile.css";
 // IMPORTED CUSTOM MODULES
 import PageLoader from "../partials/loaders/Page";
 import Nav from "../partials/Nav";
