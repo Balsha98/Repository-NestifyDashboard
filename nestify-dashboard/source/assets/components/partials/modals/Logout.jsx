@@ -1,11 +1,10 @@
 // IMPORTED STYLESHEETS
 import "../../../css/partials/modals/logout.css";
-import "../../../css/responsive/partials/modals/logout.css";
 
 const Logout = function ({ onToggleLogoutModal }) {
-	return (
-		// prettier-ignore
-		<div className="div-logout-modal-container">
+    return (
+        // prettier-ignore
+        <div className="div-logout-modal-container">
 			<div className="div-logout-modal">
 				<header className="header-logout-modal">
 					<ion-icon src="/media/icons/icon-sign-out.svg" />
@@ -27,7 +26,7 @@ const Logout = function ({ onToggleLogoutModal }) {
                 </footer>
 			</div>
 		</div>
-	);
+    );
 };
 
 export default Logout;
