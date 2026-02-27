@@ -64,12 +64,12 @@ const Dashboard = function () {
         // Guard clause.
         if (!option) return;
 
-        const id = +option.dataset.id;
+        const optionId = +option.dataset.id;
 
         // Guard clause.
-        if (selectedBirdBox.id === id) return;
+        if (selectedBirdBox.id === optionId) return;
 
-        setTimeout(() => setSelectedBirdBoxId(id), 400);
+        setTimeout(() => setSelectedBirdBoxId(optionId), 400);
 
         setIsViewLoading(true);
     };
