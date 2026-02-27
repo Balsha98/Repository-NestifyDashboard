@@ -48,7 +48,7 @@ const Dashboard = function () {
     const [isViewLoading, setIsViewLoading] = useState(true);
     const [isAddingBox, setIsAddingBox] = useState(false);
     const [birdBoxes, setBirdBoxes] = useState(() => BOXES);
-    const [selectBirdBox, setSelectBirdBox] = useState(false);
+    const [isSelectingBirdBox, setIsSelectingBirdBox] = useState(false);
     const [selectedBirdBox, setSelectedBirdBox] = useState(() => BOXES[0]);
     const [selectedBirdBoxId, setSelectedBirdBoxId] = useState(() => BOXES[0].id);
     const [isUploadingData, setIsUploadingData] = useState(false);
@@ -56,15 +56,22 @@ const Dashboard = function () {
 
     const totalBirdBoxes = birdBoxes.length;
 
-    const handleSelectBirdBox = (e) => {
-        setSelectBirdBox((value) => !value);
+    const handleIsSelectingBirdBox = (e) => {
+        setIsSelectingBirdBox((value) => !value);
 
         const option = e.target.closest("li");
 
         // Guard clause.
         if (!option) return;
 
-        setSelectedBirdBoxId(+option.dataset.id);
+        const id = +option.dataset.id;
+
+        // Guard clause.
+        if (selectedBirdBox.id === id) return;
+
+        setTimeout(() => setSelectedBirdBoxId(id), 400);
+
+        setIsViewLoading(true);
     };
 
     const handleToggleBirdBoxModal = () => setIsAddingBox((value) => !value);
@@ -79,19 +86,20 @@ const Dashboard = function () {
         const loadingTimer = setTimeout(() => setIsViewLoading(false), 800);
 
         return () => clearTimeout(loadingTimer);
-    }, [setIsViewLoading]);
+    }, []);
 
     useEffect(() => {
-        // Guard clause.
-        if (selectedBirdBox.id === selectedBirdBoxId) return;
+        const loadingTimer = setTimeout(() => setIsViewLoading(false), 800);
 
         (async () => {
-            setSelectedBirdBox(birdBoxes.find((box) => box.id === selectedBirdBoxId));
-
             // const request = await fetch("URL");
             // const response = await request.json();
+
+            setSelectedBirdBox(birdBoxes.find((box) => box.id === selectedBirdBoxId));
         })();
-    }, [birdBoxes, selectedBirdBox, setSelectedBirdBox, selectedBirdBoxId]);
+
+        return () => clearTimeout(loadingTimer);
+    }, [birdBoxes, selectedBirdBox, selectedBirdBoxId]);
 
     return (
         <>
@@ -112,20 +120,20 @@ const Dashboard = function () {
                         </div>
                         <div className="div-dashboard-view-birdbox-editable-container">
                             <div className="div-birdbox-select-container">
-                                <div className="div-selected-birdbox-info-container" onClick={handleSelectBirdBox}>
+                                <div className="div-selected-birdbox-info-container" onClick={handleIsSelectingBirdBox}>
                                     <div className="div-selected-birdbox-name-container">
                                         <ion-icon src="/media/icons/icon-dot.svg" />
                                         <p>
                                             Box {selectedBirdBox.id} - {selectedBirdBox.name}
                                         </p>
                                     </div>
-                                    <ion-icon src="/media/icons/icon-chevron-down.svg" />
+                                    <ion-icon src={`/media/icons/icon-chevron-${isSelectingBirdBox ? "up" : "down"}.svg`} />
                                 </div>
-                                {selectBirdBox && (
+                                {isSelectingBirdBox && (
                                     <ul className="birdbox-options-list">
                                         {BOXES.map(({ id, name }) => {
                                             return (
-                                                <li key={id} className={`birdbox-options-list-item ${selectedBirdBox.id === id ? "active" : ""}`} onClick={handleSelectBirdBox} data-id={id}>
+                                                <li key={id} className={`birdbox-options-list-item ${selectedBirdBox.id === id ? "active" : ""}`} onClick={handleIsSelectingBirdBox} data-id={id}>
                                                     <span>
                                                         Box {id} - {name}
                                                     </span>
