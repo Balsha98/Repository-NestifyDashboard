@@ -1,4 +1,4 @@
-import { Activity, useEffect, useState } from "react";
+import { Activity, use, useEffect, useState } from "react";
 // IMPORTED STYLESHEETS
 import "../../css/views/dashboard.css";
 import "../../css/responsive/views/dashboard.css";
@@ -16,15 +16,56 @@ import Maintenance from "../partials/views/dashboard/Maintenance";
 import Settings from "../partials/views/dashboard/Settings";
 import NotificationModal from "../partials/modals/Notification";
 
+const BOXES = [
+    {
+        id: 1,
+        name: "Cornwall Preserve",
+        data: {},
+    },
+    {
+        id: 2,
+        name: "Deer Creek Woods East",
+        data: {},
+    },
+    {
+        id: 3,
+        name: "Deer Creek Woods West",
+        data: {},
+    },
+    {
+        id: 4,
+        name: "Ganargua Creek Meadow Preserve",
+        data: {},
+    },
+    {
+        id: 5,
+        name: "Irene Gossin Nature Preserve",
+        data: {},
+    },
+];
+
 const Dashboard = function () {
     const [isViewLoading, setIsViewLoading] = useState(true);
     const [isAddingBox, setIsAddingBox] = useState(false);
+    const [birdBoxes, setBirdBoxes] = useState(() => BOXES);
     const [selectBirdBox, setSelectBirdBox] = useState(false);
-    const [birdBoxData, setBirdBoxData] = useState(() => true);
+    const [selectedBirdBox, setSelectedBirdBox] = useState(() => BOXES[0]);
+    const [selectedBirdBoxId, setSelectedBirdBoxId] = useState(() => BOXES[0].id);
     const [isUploadingData, setIsUploadingData] = useState(false);
     const [selectedInnerView, setSelectedInnerView] = useState("overview");
 
-    const handleSelectBirdBox = () => setSelectBirdBox((value) => !value);
+    const totalBirdBoxes = birdBoxes.length;
+
+    const handleSelectBirdBox = (e) => {
+        setSelectBirdBox((value) => !value);
+
+        const option = e.target.closest("li");
+
+        // Guard clause.
+        if (!option) return;
+
+        setSelectedBirdBoxId(+option.dataset.id);
+    };
 
     const handleToggleBirdBoxModal = () => setIsAddingBox((value) => !value);
 
@@ -32,13 +73,25 @@ const Dashboard = function () {
 
     const handleToggleInnerView = (e) => setSelectedInnerView(e.target.closest("button").dataset.innerViewName);
 
-    useEffect(function () {
+    useEffect(() => {
         document.title = "Nestify | Dashboard";
 
         const loadingTimer = setTimeout(() => setIsViewLoading(false), 800);
 
         return () => clearTimeout(loadingTimer);
-    }, []);
+    }, [setIsViewLoading]);
+
+    useEffect(() => {
+        // Guard clause.
+        if (selectedBirdBox.id === selectedBirdBoxId) return;
+
+        (async () => {
+            setSelectedBirdBox(birdBoxes.find((box) => box.id === selectedBirdBoxId));
+
+            // const request = await fetch("URL");
+            // const response = await request.json();
+        })();
+    }, [birdBoxes, selectedBirdBox, setSelectedBirdBox, selectedBirdBoxId]);
 
     return (
         <>
@@ -54,40 +107,32 @@ const Dashboard = function () {
                 <div className="div-dashboard-view-container">
                     <header className="header-dashboard-view-container">
                         <div className="div-header-dashboard-view-birdbox-info-container">
-                            <h2>BirdBox 1</h2>
-                            <p>Cornwall Preserve</p>
+                            <h2>BirdBox {selectedBirdBox.id}</h2>
+                            <p>{selectedBirdBox.name}</p>
                         </div>
                         <div className="div-dashboard-view-birdbox-editable-container">
                             <div className="div-birdbox-select-container">
                                 <div className="div-selected-birdbox-info-container" onClick={handleSelectBirdBox}>
                                     <div className="div-selected-birdbox-name-container">
                                         <ion-icon src="/media/icons/icon-dot.svg" />
-                                        <p>Box 1 - Cornwall Preserve</p>
+                                        <p>
+                                            Box {selectedBirdBox.id} - {selectedBirdBox.name}
+                                        </p>
                                     </div>
                                     <ion-icon src="/media/icons/icon-chevron-down.svg" />
                                 </div>
                                 {selectBirdBox && (
                                     <ul className="birdbox-options-list">
-                                        <li className="birdbox-options-list-item active">
-                                            <span>Box 1 - Cornwall Preserve</span>
-                                            <ion-icon src="/media/icons/icon-selected.svg" />
-                                        </li>
-                                        <li className="birdbox-options-list-item">
-                                            <span>Box 2 - Deer Creek Woods East</span>
-                                            <ion-icon src="/media/icons/icon-selected.svg" />
-                                        </li>
-                                        <li className="birdbox-options-list-item">
-                                            <span>Box 3 - Deer Creek Woods West</span>
-                                            <ion-icon src="/media/icons/icon-selected.svg" />
-                                        </li>
-                                        <li className="birdbox-options-list-item">
-                                            <span>Box 4 - Ganargua Creek Meadow Preserve</span>
-                                            <ion-icon src="/media/icons/icon-selected.svg" />
-                                        </li>
-                                        <li className="birdbox-options-list-item">
-                                            <span>Box 5 - Irene Gossin Nature Preserve</span>
-                                            <ion-icon src="/media/icons/icon-selected.svg" />
-                                        </li>
+                                        {BOXES.map(({ id, name }) => {
+                                            return (
+                                                <li key={id} className={`birdbox-options-list-item ${selectedBirdBox.id === id ? "active" : ""}`} onClick={handleSelectBirdBox} data-id={id}>
+                                                    <span>
+                                                        Box {id} - {name}
+                                                    </span>
+                                                    <ion-icon src="/media/icons/icon-selected.svg" />
+                                                </li>
+                                            );
+                                        })}
                                     </ul>
                                 )}
                             </div>
@@ -96,16 +141,11 @@ const Dashboard = function () {
                             </button>
                         </div>
                     </header>
-                    <Activity mode={birdBoxData ? "hidden" : "visible"}>
+                    <Activity mode={totalBirdBoxes ? "hidden" : "visible"}>
                         <UploadSign isUploadingData={isUploadingData} onToggleUploadModal={handleToggleUploadModal} />
                     </Activity>
-                    <Activity mode={birdBoxData ? "visible" : "hidden"}>
-                        <General
-                            isUploadingData={isUploadingData}
-                            onToggleUploadModal={handleToggleUploadModal}
-                            selectedInnerView={selectedInnerView}
-                            onToggleInnerView={handleToggleInnerView}
-                        />
+                    <Activity mode={totalBirdBoxes ? "visible" : "hidden"}>
+                        <General isUploadingData={isUploadingData} onToggleUploadModal={handleToggleUploadModal} selectedInnerView={selectedInnerView} onToggleInnerView={handleToggleInnerView} />
                         <Activity mode={selectedInnerView === "overview" ? "visible" : "hidden"}>
                             <Overview onToggleInnerView={handleToggleInnerView} />
                         </Activity>
