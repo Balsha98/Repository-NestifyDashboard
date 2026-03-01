@@ -133,7 +133,88 @@ Lightweight mapping solution for birdbox coordinate visualization:
 ## Project Structure
 
 ```
-
+Repository-NestifyDashboard/
+│
+├── nestify-dashboard/  # Main application directory.
+│   │
+│   ├── public/         # Static public files.
+│   │   │
+│   │   ├── media/
+│   │   │   ├── icons/          # Icon files.
+│   │   │   └── images/         # Image files.
+│   │   │
+│   │   └── nestify.svg         # Site favicon.
+│   │
+│   ├── source/         # Source files.
+│   │   │
+│   │   ├── assets/     # Application assets.
+│   │   │   │
+│   │   │   ├── components/     # React components.
+│   │   │   │   │
+│   │   │   │   ├── partials/   # Reusable component partials.
+│   │   │   │   │   ├── loaders/        # Loading components.
+│   │   │   │   │   ├── modals/         # Modal components.
+│   │   │   │   │   ├── signs/          # Sign-related components.
+│   │   │   │   │   ├── views/          # View-specific partials.
+│   │   │   │   │   │   ├── auth/           # Auth page partials.
+│   │   │   │   │   │   ├── dashboard/      # Dashboard page partials.
+│   │   │   │   │   │   ├── invalid/        # Invalid page partials.
+│   │   │   │   │   │   ├── map/            # Map page partials.
+│   │   │   │   │   │   ├── profile/        # Profile page partials.
+│   │   │   │   │   │   └── report/         # Report page partials.
+│   │   │   │   │   │
+│   │   │   │   │   ├── Logo.jsx        # Logo component.
+│   │   │   │   │   └── Nav.jsx         # Navigation component.
+│   │   │   │   │
+│   │   │   │   ├── views/      # Main view components.
+│   │   │   │   │   └── ...             # View .jsx modules.
+│   │   │   │   │
+│   │   │   │   └── App.jsx             # Main app component.
+│   │   │   │
+│   │   │   └── css/            # Stylesheets.
+│   │   │       │
+│   │   │       ├── partials/           # CSS partials.
+│   │   │       │   ├── loaders/            # Loading styles.
+│   │   │       │   ├── modals/             # Modal styles.
+│   │   │       │   ├── signs/              # Sign styles.
+│   │   │       │   ├── views/              # View-specific styles.
+│   │   │       │   │   ├── auth/               # Auth styles.
+│   │   │       │   │   ├── dashboard/          # Dashboard styles.
+│   │   │       │   │   ├── invalid/            # Invalid page styles.
+│   │   │       │   │   ├── map/                # Map styles.
+│   │   │       │   │   ├── profile/            # Profile styles.
+│   │   │       │   │   └── report/             # Report styles.
+│   │   │       │   │
+│   │   │       │   └── nav.css             # Navigation styles.
+│   │   │       │
+│   │   │       ├── responsive/         # Responsive styles.
+│   │   │       │   ├── partials/
+│   │   │       │   │   ├── modals/         # Responsive modal styles.
+│   │   │       │   │   ├── views/          # Responsive view styles.
+│   │   │       │   │   │   ├── dashboard/      # Dashboard responsive.
+│   │   │       │   │   │   ├── map/            # Map responsive.
+│   │   │       │   │   │   └── report/         # Report responsive.
+│   │   │       │   │   │
+│   │   │       │   │   └── nav.css         # Responsive nav styles.
+│   │   │       │   │
+│   │   │       │   └── views/
+│   │   │       │       └── ...             # View-specific responsive CSS files.
+│   │   │       │
+│   │   │       ├── views/              # Main view styles.
+│   │   │       │   └── ...             # View-specific CSS files.
+│   │   │       │
+│   │   │       ├── general.css         # General styling.
+│   │   │       ├── reusable.css        # Reusable classes.
+│   │   │       └── variables.css       # CSS variables.
+│   │   │
+│   │   └── app.jsx     # Application entry point.
+│   │
+│   ├── index.html              # Application index file.
+│   ├── netlify.toml            # Netlify-specific routing rules.
+│   ├── package.json            # Dependencies and scripts.
+│   └── vite.config.js          # Vite configuration.
+│
+└── README.md           # Project documentation.
 ```
 
 ## Scripts
