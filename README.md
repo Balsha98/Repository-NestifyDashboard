@@ -166,11 +166,11 @@ The build files will be generated in the `dist` directory.
 
 **Note**: This is the frontend portion of the project. Backend integration would include:
 
-- API integration for real-time data
-- Database connectivity
-- User authentication with backend
-- Data persistence
-- Export functionality to PDF/CSV
+- Database connectivity.
+- API integration for real-time data.
+- User authentication with backend.
+- Export functionality to PDF/CSV.
+- Data persistence.
 
 ## About Genesee Land Trust
 
